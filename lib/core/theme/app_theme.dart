@@ -5,6 +5,8 @@ import '../color/app_color.dart';
 
 final class AppTheme {
   static final ThemeData theme = ThemeData(
+    primaryColor: AppColor.fontPrimary,
+    textTheme: const TextTheme(),
     scaffoldBackgroundColor: AppColor.scaffold,
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColor.scaffold,
