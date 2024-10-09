@@ -1,6 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:iconly/iconly.dart';
 
 import '../../../../core/color/app_color.dart';
 import '../../../../core/const/app_padding.dart';
@@ -89,31 +90,44 @@ class _MainNavigationState extends State<MainNavigation> {
                   ),
                   Gap(40),
                   GridView.builder(
-                      shrinkWrap:
-                          true, // Add this to prevent infinite height error
-                      physics:
-                          NeverScrollableScrollPhysics(), // Prevent scrolling inside SingleChildScrollView
-                      itemCount: 10,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2, // Number of columns
-                        crossAxisSpacing: 16.0, // Spacing between columns
-                        mainAxisSpacing: 16.0, // Spacing between rows
-                        childAspectRatio: 1.0, // Aspect ratio of each item
-                      ),
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: 200,
-                          width: 200,
-                          decoration: BoxDecoration(
-                            color: AppColor.card,
-                            borderRadius: BorderRadius.circular(AppRadius.x20),
-                          ),
-                        );
-                      }),
+                    shrinkWrap:
+                        true, // Add this to prevent infinite height error
+                    physics:
+                        NeverScrollableScrollPhysics(), // Prevent scrolling inside SingleChildScrollView
+                    itemCount: 10,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2, // Number of columns
+                      crossAxisSpacing: 16.0, // Spacing between columns
+                      mainAxisSpacing: 16.0, // Spacing between rows
+                      childAspectRatio: 1.0, // Aspect ratio of each item
+                    ),
+                    itemBuilder: (context, index) {
+                      return Container(
+                        height: 200,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          color: AppColor.card,
+                          borderRadius: BorderRadius.circular(AppRadius.x20),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
             ),
           ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        icon: Icon(
+          IconlyBroken.graph,
+          color: Colors.white,
+        ),
+        onPressed: () {},
+        backgroundColor: AppColor.fab,
+        label: Text(
+          'Add Shot',
+          style: context.bodyLarge,
         ),
       ),
     );

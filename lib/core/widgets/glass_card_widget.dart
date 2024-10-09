@@ -7,8 +7,8 @@ import '../const/app_radius.dart';
 final class GlassCardWidget extends StatelessWidget {
   final Widget child;
   const GlassCardWidget({
-    super.key,
     required this.child,
+    super.key,
   });
 
   @override

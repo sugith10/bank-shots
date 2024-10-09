@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
+@immutable
 final class AppColor {
-  AppColor._();
+  const AppColor._();
   static const scaffold = Colors.black;
   static const fontPrimary = Colors.white;
   static const fontSecondary = Colors.grey;
@@ -10,4 +11,5 @@ final class AppColor {
   static const secondary = Color(0xFFFDDA27);
   static const tertiary = Color(0xFFE5E5E5);
   static const card = Color.fromARGB(255, 27, 27, 27);
+  static const fab = Color.fromARGB(255, 40, 40, 40);
 }
