@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../assets/app_fonts.dart';
 import '../color/app_color.dart';
 import '../const/app_radius.dart';
+import '../gen/fonts.gen.dart';
 
 final class AppTheme {
   static final ThemeData theme = ThemeData(
@@ -10,6 +10,9 @@ final class AppTheme {
     scaffoldBackgroundColor: AppColor.scaffold,
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColor.scaffold,
+    ),
+    iconTheme: const IconThemeData(
+      color: AppColor.fontPrimary,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -20,7 +23,15 @@ final class AppTheme {
         ),
       ),
     ),
-    fontFamily: AppFonts.outfit,
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        overlayColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppRadius.round),
+        ),
+      ),
+    ),
+    fontFamily: FontFamily.outfit,
     textTheme: const TextTheme(
       displayLarge: TextStyle(
         color: AppColor.fontPrimary,

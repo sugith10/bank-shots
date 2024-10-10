@@ -8,6 +8,7 @@ environment:
   sdk: ^3.5.3
 
 dependencies:
+  animate_do: ^3.3.4
   awesome_extensions: ^2.0.18
   flutter:
     sdk: flutter
@@ -16,6 +17,7 @@ dependencies:
   go_router: ^14.3.0
   iconly: ^1.0.1
   intl: ^0.19.0
+  liquid_swipe: ^3.1.0
 
 dev_dependencies:
   build_runner: ^2.4.13
@@ -28,9 +30,10 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/png/
+    - assets/svg/
+    - assets/webp/
 
   fonts:
     - family: outfit
