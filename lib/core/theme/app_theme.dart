@@ -14,6 +14,7 @@ final class AppTheme {
     iconTheme: const IconThemeData(
       color: AppColor.fontPrimary,
     ),
+    inputDecorationTheme: InputDecorationTheme(),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,

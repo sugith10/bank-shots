@@ -6,8 +6,10 @@ import '../const/app_radius.dart';
 
 final class GlassCardWidget extends StatelessWidget {
   final Widget child;
+  final Color color;
   const GlassCardWidget({
     required this.child,
+    this.color = Colors.black,
     super.key,
   });
 
@@ -20,16 +22,16 @@ final class GlassCardWidget extends StatelessWidget {
         child: DecoratedBox(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadius.x20),
-            color: Colors.black.withOpacity(0.3),
+            color: color.withOpacity(0.3),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.1),
+                color: color.withOpacity(0.1),
                 blurRadius: 10,
                 spreadRadius: 5,
               ),
             ],
             border: Border.all(
-              color: Colors.black.withOpacity(0.1),
+              color: color.withOpacity(0.1),
             ),
           ),
           child: child,

@@ -1,0 +1,24 @@
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 80.3 80.3" style="enable-background:new 0 0 80.3 80.3" xml:space="preserve">
+    <style>.st6{fill:#61c3af}.st22{fill:#bbc2c7}</style>
+    <circle cx="40.2" cy="40.2" r="40.2" style="fill:#81caff"/>
+    <circle cx="40.2" cy="40.2" r="31.6" style="fill:#50646f"/>
+    <circle cx="40.2" cy="40.2" r="28" style="fill:#fff"/>
+    <path class="st22" d="M40.2 43.5v-6.7L59 40.2zM40.2 36.8v6.7l-18.8-3.3z"/>
+    <path class="st22" d="M43.5 40.2h-6.7l3.4-18.8zM36.8 40.2h6.7L40.2 59z"/>
+    <g>
+        <path class="st22" d="m38.7 41.6 2.9-2.9 6.6 9.5zM41.6 38.7l-2.9 2.9-6.5-9.4z"/>
+        <g>
+            <path class="st22" d="m41.6 41.6-2.9-2.9 9.5-6.5zM38.7 38.7l2.9 2.9-9.4 6.6z"/>
+        </g>
+    </g>
+    <g>
+        <path style="fill:#e7543a" d="m43.2 43.2-6-6L57 23.3z"/>
+        <path style="fill:#2384ab" d="m37.2 37.2 6 6L23.3 57z"/>
+    </g>
+    <g>
+        <path class="st6" d="M39.2 13.7h1.9v6h-1.9zM39.2 60.6h1.9v6h-1.9z"/>
+        <g>
+            <path class="st6" d="M60.6 39.2h6v1.9h-6zM13.7 39.2h6v1.9h-6z"/>
+        </g>
+    </g>
+</svg>

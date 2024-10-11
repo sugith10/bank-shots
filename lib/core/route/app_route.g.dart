@@ -12,7 +12,7 @@ List<RouteBase> get $appRoutes => [
     ];
 
 RouteBase get $mainNavigationRoute => GoRouteData.$route(
-      path: '/home',
+      path: '/',
       factory: $MainNavigationRouteExtension._fromState,
     );
 
@@ -21,7 +21,7 @@ extension $MainNavigationRouteExtension on MainNavigationRoute {
       const MainNavigationRoute();
 
   String get location => GoRouteData.$location(
-        '/home',
+        '/',
       );
 
   void go(BuildContext context) => context.go(location);
@@ -35,7 +35,7 @@ extension $MainNavigationRouteExtension on MainNavigationRoute {
 }
 
 RouteBase get $createGoalRoute => GoRouteData.$route(
-      path: '/',
+      path: '/createGoal',
       factory: $CreateGoalRouteExtension._fromState,
     );
 
@@ -44,7 +44,7 @@ extension $CreateGoalRouteExtension on CreateGoalRoute {
       const CreateGoalRoute();
 
   String get location => GoRouteData.$location(
-        '/',
+        '/createGoal',
       );
 
   void go(BuildContext context) => context.go(location);

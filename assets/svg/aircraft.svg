@@ -1,0 +1,21 @@
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 80.3 80.3" style="enable-background:new 0 0 80.3 80.3" xml:space="preserve">
+    <style>.st4{fill:#0c2c48}</style>
+    <circle cx="40.2" cy="40.2" r="40.2" style="fill:#55ab99"/>
+    <circle cx="40.2" cy="39.8" r="34" style="fill:#f1cc4b"/>
+    <path class="st4" d="M41.6 38.1c0 .5-.4.8-1 .8s-1-.4-1-.8V28c0-.5.4-.8 1-.8s1 .4 1 .8v10.1zM23.3 35.9l14.1 2 .9 3.9-15.5-4.9zM57.9 35.9l-14.2 2-.8 3.9 15.4-4.9z"/>
+    <path class="st4" d="M40.6 35.3c-4 0-7.3 3.3-7.3 7.3s3.3 9.7 7.3 9.7 7.3-5.7 7.3-9.7c-.1-4-3.3-7.3-7.3-7.3z"/>
+    <path style="fill:#fff" d="m35.3 42.6 1.5-2.8h7.6l1.5 2.8z"/>
+    <g>
+        <path class="st4" d="m9.6 39.3 25.2 3.3 1.6 6.7L8.8 41zM71.6 39.3l-25.3 3.3-1.5 6.7L72.4 41z"/>
+    </g>
+    <g>
+        <circle class="st4" cx="24.3" cy="46.4" r="2.8"/>
+        <circle class="st4" cx="56" cy="46.4" r="2.8"/>
+    </g>
+    <g>
+        <path class="st4" d="M30.2 52.4H33v6.4h-2.8zM48.1 52.4h2.8v6.4h-2.8z"/>
+    </g>
+    <g>
+        <path class="st4" d="m31.8 53.4-.6-.8c3-2.3 6.4-5 6.7-5.4l.9.4c0 .1-.2.5-7 5.8zM49.3 53.4c-6.8-5.2-6.9-5.6-7-5.8l.9-.4-.5.2.4-.3c.3.4 3.7 3.1 6.7 5.4l-.5.9z"/>
+    </g>
+</svg>

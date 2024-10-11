@@ -6,6 +6,7 @@ final class AppColor {
   static const scaffold = Color(0xFF1a1a1a);
   static const fontPrimary = Colors.white;
   static const fontSecondary = Colors.grey;
+  static const fontOpposite = Colors.black;
   static const primary = Color(0xFF9AEF5A);
   static const complementary = Color.fromARGB(255, 255, 255, 255);
   static const secondary = Color(0xFFFDDA27);
@@ -14,6 +15,9 @@ final class AppColor {
   static const fab = Color.fromARGB(255, 40, 40, 40);
   static const createButton = Color(0xFF6050CF);
   static final shadowFont = Colors.white.withOpacity(0.6);
+
+  static final swipeDark = Colors.black.withOpacity(0.7);
+  static final swipeLight = Colors.white.withOpacity(0.7);
 
   // Card colors
   static const card1 = Color(0xFFD1FD08);
@@ -32,7 +36,7 @@ final class AppColor {
   static const card14 = Color(0xFF97E0F7);
 
   static const List<Color> colorList = [
-    primary,
+    card1,
     card2,
     card3,
     card4,
@@ -40,7 +44,7 @@ final class AppColor {
     card6,
     card7,
     card8,
-    card1,
+    primary,
     card9,
     card10,
     card11,
