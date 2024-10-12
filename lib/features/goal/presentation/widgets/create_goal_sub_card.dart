@@ -80,7 +80,7 @@ final class _CreateGoalSubCard extends StatelessWidget {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(AppPadding.x16),
-                    child: SvgPicture.asset(Assets.svg.money),
+                    child: SvgPicture.asset(Assets.svg.apple),
                   ),
                 ),
               ),

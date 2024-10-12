@@ -36,9 +36,6 @@ class $AssetsSvgGen {
   /// File path: assets/svg/binocular.svg
   String get binocular => 'assets/svg/binocular.svg';
 
-  /// File path: assets/svg/block_chain.svg
-  String get blockChain => 'assets/svg/block_chain.svg';
-
   /// File path: assets/svg/campfire.svg
   String get campfire => 'assets/svg/campfire.svg';
 
@@ -60,29 +57,14 @@ class $AssetsSvgGen {
   /// File path: assets/svg/girl.svg
   String get girl => 'assets/svg/girl.svg';
 
-  /// File path: assets/svg/haha.svg
-  String get haha => 'assets/svg/haha.svg';
-
   /// File path: assets/svg/hot_money.svg
   String get hotMoney => 'assets/svg/hot_money.svg';
-
-  /// File path: assets/svg/hour_glass.svg
-  String get hourGlass => 'assets/svg/hour_glass.svg';
 
   /// File path: assets/svg/lighthouse.svg
   String get lighthouse => 'assets/svg/lighthouse.svg';
 
   /// File path: assets/svg/love_face.svg
   String get loveFace => 'assets/svg/love_face.svg';
-
-  /// File path: assets/svg/money.svg
-  String get money => 'assets/svg/money.svg';
-
-  /// File path: assets/svg/money_and_coins.svg
-  String get moneyAndCoins => 'assets/svg/money_and_coins.svg';
-
-  /// File path: assets/svg/money_bag.svg
-  String get moneyBag => 'assets/svg/money_bag.svg';
 
   /// File path: assets/svg/money_mouth.svg
   String get moneyMouth => 'assets/svg/money_mouth.svg';
@@ -93,32 +75,14 @@ class $AssetsSvgGen {
   /// File path: assets/svg/piggy_bank.svg
   String get piggyBank => 'assets/svg/piggy_bank.svg';
 
-  /// File path: assets/svg/plane.svg
-  String get plane => 'assets/svg/plane.svg';
-
   /// File path: assets/svg/pyramid.svg
   String get pyramid => 'assets/svg/pyramid.svg';
-
-  /// File path: assets/svg/save_money.svg
-  String get saveMoney => 'assets/svg/save_money.svg';
-
-  /// File path: assets/svg/send_money.svg
-  String get sendMoney => 'assets/svg/send_money.svg';
 
   /// File path: assets/svg/shoe.svg
   String get shoe => 'assets/svg/shoe.svg';
 
-  /// File path: assets/svg/shushing_face.svg
-  String get shushingFace => 'assets/svg/shushing_face.svg';
-
-  /// File path: assets/svg/skirt.svg
-  String get skirt => 'assets/svg/skirt.svg';
-
   /// File path: assets/svg/sneezing.svg
   String get sneezing => 'assets/svg/sneezing.svg';
-
-  /// File path: assets/svg/snow.svg
-  String get snow => 'assets/svg/snow.svg';
 
   /// File path: assets/svg/sunglass.svg
   String get sunglass => 'assets/svg/sunglass.svg';
@@ -145,7 +109,6 @@ class $AssetsSvgGen {
         bag,
         beach,
         binocular,
-        blockChain,
         campfire,
         clock,
         comapss,
@@ -153,26 +116,15 @@ class $AssetsSvgGen {
         family,
         fuji,
         girl,
-        haha,
         hotMoney,
-        hourGlass,
         lighthouse,
         loveFace,
-        money,
-        moneyAndCoins,
-        moneyBag,
         moneyMouth,
         phone,
         piggyBank,
-        plane,
         pyramid,
-        saveMoney,
-        sendMoney,
         shoe,
-        shushingFace,
-        skirt,
         sneezing,
-        snow,
         sunglass,
         towerOfPissa,
         tree,
