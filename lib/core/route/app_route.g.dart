@@ -18,7 +18,7 @@ RouteBase get $mainNavigationRoute => GoRouteData.$route(
 
 extension $MainNavigationRouteExtension on MainNavigationRoute {
   static MainNavigationRoute _fromState(GoRouterState state) =>
-      const MainNavigationRoute();
+      MainNavigationRoute();
 
   String get location => GoRouteData.$location(
         '/',
@@ -40,8 +40,7 @@ RouteBase get $createGoalRoute => GoRouteData.$route(
     );
 
 extension $CreateGoalRouteExtension on CreateGoalRoute {
-  static CreateGoalRoute _fromState(GoRouterState state) =>
-      const CreateGoalRoute();
+  static CreateGoalRoute _fromState(GoRouterState state) => CreateGoalRoute();
 
   String get location => GoRouteData.$location(
         '/createGoal',

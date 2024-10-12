@@ -15,6 +15,7 @@ final class AppColor {
   static const fab = Color.fromARGB(255, 40, 40, 40);
   static const createButton = Color(0xFF6050CF);
   static final shadowFont = Colors.white.withOpacity(0.6);
+  static final shadowFontDark = Colors.black.withOpacity(0.6);
 
   static final swipeDark = Colors.black.withOpacity(0.7);
   static final swipeLight = Colors.white.withOpacity(0.7);

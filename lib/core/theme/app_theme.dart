@@ -32,6 +32,12 @@ final class AppTheme {
         ),
       ),
     ),
+    scrollbarTheme: ScrollbarThemeData(
+        thumbColor: WidgetStatePropertyAll(Colors.white),
+        thumbVisibility: WidgetStatePropertyAll(true),
+        trackColor: WidgetStatePropertyAll(Colors.white),
+        trackVisibility: WidgetStatePropertyAll(true),
+        trackBorderColor: WidgetStatePropertyAll(Colors.white)),
     fontFamily: FontFamily.outfit,
     textTheme: const TextTheme(
       displayLarge: TextStyle(

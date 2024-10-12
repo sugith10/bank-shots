@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "my_diary (iPhone)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "E111BB39-1B55-4F32-8E49-70198198C51A" // iPhone 15 Pro Max simulator
+        },
+        {
+            "name": "my_diary (profile mode, iPhone)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "deviceId": "E111BB39-1B55-4F32-8E49-70198198C51A" // iPhone 15 Pro Max simulator
+        },
+        {
+            "name": "my_diary (release mode, iPhone)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "deviceId": "E111BB39-1B55-4F32-8E49-70198198C51A" // iPhone 15 Pro Max simulator
+        },
+        {
+            "name": "my_diary (macOS)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "macos" // macOS desktop
+        },
+        {
+            "name": "my_diary (Chrome)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "chrome" // Chrome browser
+        }
+    ]
+}

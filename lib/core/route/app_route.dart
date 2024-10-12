@@ -8,8 +8,6 @@ part 'app_route.g.dart';
 
 @TypedGoRoute<MainNavigationRoute>(path: '/')
 final class MainNavigationRoute extends GoRouteData {
-  const MainNavigationRoute();
-
   @override
   Widget build(BuildContext context, GoRouterState state) {
     return MainNavigation();
@@ -18,8 +16,6 @@ final class MainNavigationRoute extends GoRouteData {
 
 @TypedGoRoute<CreateGoalRoute>(path: '/createGoal')
 final class CreateGoalRoute extends GoRouteData {
-  const CreateGoalRoute();
-
   @override
   Widget build(BuildContext context, GoRouterState state) {
     return CreateGoalPage();

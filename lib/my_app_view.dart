@@ -12,6 +12,9 @@ class MyAppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-        title: 'Bank Shot', theme: AppTheme.theme, routerConfig: _router);
+      title: 'Bank Shot',
+      theme: AppTheme.theme,
+      routerConfig: _router,
+    );
   }
 }
