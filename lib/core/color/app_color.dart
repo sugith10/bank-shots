@@ -9,14 +9,18 @@ final class AppColor {
   static const fontOpposite = Colors.black;
   static const primary = Color(0xFF9AEF5A);
   static const complementary = Color.fromARGB(255, 255, 255, 255);
-  static const secondary = Color(0xFFFDDA27);
-  static const tertiary = Color(0xFFE5E5E5);
+  static const divider = Color.fromRGBO(255, 255, 255, 0.824);
+  static const tertiary = Color.fromRGBO(229, 229, 229, 1);
   static const card = Color.fromARGB(255, 27, 27, 27);
   static const fab = Color.fromARGB(255, 40, 40, 40);
-  static const createButton = Color(0xFF6050CF);
+  static const secondary = Color(0xFF6050CF);
   static final shadowFont = Colors.white.withOpacity(0.6);
   static final shadowFontDark = Colors.black.withOpacity(0.6);
   static final error = Colors.redAccent;
+
+  static const gradientPrimary = Color.fromRGBO(78, 78, 78, 1);
+  static const gradientSecondary = Color.fromRGBO(0, 0, 0, 1);
+  static const boxShadow = Color.fromARGB(66, 255, 255, 255);
 
   static final swipeDark = Colors.black.withOpacity(0.7);
   static final swipeLight = Colors.white.withOpacity(0.7);

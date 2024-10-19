@@ -1,6 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:gap/gap.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
 import '../../../../core/color/app_color.dart';
@@ -55,20 +56,26 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
         child: Stack(
           children: [
             CreateGoalBackGroundCard(
-              height: size.height * 0.65,
-              color: AppColor.createButton,
+              height: size.height,
+              color: AppColor.secondary,
               delay: 1500,
               child: Column(
                 children: [
                   Spacer(),
-                  CreateGoalButton(),
+                  CreateGoalButton(
+                    //    text: 'Next',
+                    text: 'Complete',
+                  ),
+                  Gap(20),
                 ],
               ),
             ),
             CreateGoalCardConstrainedBox(
               delay: 2000,
-              height: size.height * 0.55,
+              // height: size.height * 0.55,
+              height: size.height * 0.85,
               child: LiquidSwipe.builder(
+                disableUserGesture: false,
                 itemCount: AppColor.colorList.length,
                 itemBuilder: (context, index) {
                   return CreateGoalCard(
@@ -80,13 +87,13 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
                           titleController: _goalController,
                           goalAmountController: _goalAmountController,
                           goalBalanceController: _goalBalanceController,
-                          height: size.height * 0.35,
+                          height: size.height * 0.65,
                           bgColor: AppColor.colorList[index],
                         ),
                         Spacer(),
-                        _SwipeText(
-                          color: AppColor.colorList[index],
-                        )
+                        // _SwipeText(
+                        //   color: AppColor.colorList[index],
+                        // )
                       ],
                     ),
                   );

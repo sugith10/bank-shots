@@ -5,11 +5,10 @@ import 'package:gap/gap.dart';
 
 import '../../../../core/color/app_color.dart';
 import '../../../../core/const/app_padding.dart';
+import '../../../../core/gen/assets.gen.dart';
 import '../../../../core/util/color_util.dart';
 import '../../../../core/widgets/glass_card_widget.dart';
-import '../pages/create_goal_page.dart';
-import 'set_current_balance_widget.dart';
-import 'set_goal_title_widget.dart';
+import 'goal_icon.dart';
 
 final class CreateGoalSubCard extends ConsumerWidget {
   const CreateGoalSubCard({
@@ -54,9 +53,14 @@ final class CreateGoalSubCard extends ConsumerWidget {
           child: Column(
             children: [
               Spacer(),
+              GoalIcon(
+                icon: Assets.svg.apple,
+                showDecoration: false,
+              ),
+              Gap(20),
               Text(
                 'Credit Card Payment',
-                style: context.titleLarge?.copyWith(
+                style: context.displaySmall?.copyWith(
                   fontWeight: FontWeight.w500,
                   color: ColorUtil.get(
                     backgroundColor: bgColor,
@@ -64,8 +68,9 @@ final class CreateGoalSubCard extends ConsumerWidget {
                     light: AppColor.fontPrimary,
                   ),
                 ),
+                textAlign: TextAlign.center,
               ),
-              Gap(10),
+              Gap(15),
               Text(
                 '\$ 5000',
                 style: context.displayLarge?.copyWith(
@@ -77,7 +82,9 @@ final class CreateGoalSubCard extends ConsumerWidget {
                   ),
                 ),
               ),
-              Gap(20),
+              Gap(10),
+              Divider(),
+              Gap(10),
               Text(
                 'Current Balance',
                 style: context.titleLarge?.copyWith(
@@ -92,7 +99,7 @@ final class CreateGoalSubCard extends ConsumerWidget {
               Gap(10),
               Text(
                 '\$ 5000',
-                style: context.displayLarge?.copyWith(
+                style: context.displaySmall?.copyWith(
                   fontWeight: FontWeight.w700,
                   color: ColorUtil.get(
                     backgroundColor: bgColor,

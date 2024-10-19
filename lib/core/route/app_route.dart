@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/goal/presentation/pages/create_goal_page.dart';
-import '../../features/navigation_menu/presentation/pages/main_navigation.dart';
+import '../../features/navigation_menu/presentation/pages/home_page.dart';
 
 part 'app_route.g.dart';
 
@@ -10,7 +10,7 @@ part 'app_route.g.dart';
 final class MainNavigationRoute extends GoRouteData {
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return MainNavigation();
+    return HomePage();
   }
 }
 

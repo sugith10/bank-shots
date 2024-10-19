@@ -8,7 +8,9 @@ import '../../../../core/const/app_radius.dart';
 import '../../../../core/providers/app_provider.dart';
 
 final class CreateGoalButton extends ConsumerWidget {
+  final String text;
   const CreateGoalButton({
+    required this.text,
     super.key,
   });
 
@@ -38,7 +40,7 @@ final class CreateGoalButton extends ConsumerWidget {
           vertical: 5,
         ),
         child: Text(
-          'Next',
+          text,
           style: context.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
             color: goal.next ? Colors.white : AppColor.shadowFont,

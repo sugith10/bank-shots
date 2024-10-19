@@ -6,7 +6,10 @@ import '../gen/fonts.gen.dart';
 
 final class AppTheme {
   static final ThemeData theme = ThemeData(
-    primaryColor: AppColor.fontPrimary,
+    dividerColor: AppColor.swipeLight,
+    dividerTheme: DividerThemeData(
+      color: AppColor.swipeLight,
+    ),
     listTileTheme: ListTileThemeData(
       textColor: AppColor.fontPrimary,
     ),

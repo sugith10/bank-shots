@@ -1,13 +1,12 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../../../../core/color/app_color.dart';
 import '../../../../core/const/app_padding.dart';
-import '../../../../core/const/app_radius.dart';
 import '../../../../core/providers/app_provider.dart';
 import '../../../../core/util/color_util.dart';
+import 'goal_icon.dart';
 import 'goal_icon_picker_bottom_sheet.dart';
 import 'goal_text_filed.dart';
 
@@ -69,16 +68,7 @@ final class _GoalIcon extends ConsumerWidget {
       onTap: () {
         GoalIconPickerBottomSheet().getIconSheet(context, ref);
       },
-      child: Container(
-        height: 110,
-        width: 110,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadius.x75),
-          color: Colors.black.withOpacity(0.3),
-        ),
-        padding: const EdgeInsets.all(AppPadding.x16),
-        child: SvgPicture.asset(goal.icon),
-      ),
+      child: GoalIcon(icon: goal.icon),
     );
   }
 }

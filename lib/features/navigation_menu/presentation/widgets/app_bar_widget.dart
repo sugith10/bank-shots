@@ -6,7 +6,7 @@ import 'package:iconly/iconly.dart';
 import '../../../../core/const/app_padding.dart';
 import '../../../../core/gen/assets.gen.dart';
 import '../../../../core/widgets/glass_card_widget.dart';
-import 'selecte_account_dialog_widget.dart';
+import 'select_account_dialog_widget.dart';
 
 final class AppBarWidget extends StatefulWidget {
   const AppBarWidget({
