@@ -17,14 +17,19 @@ final class AppBarWidget extends StatefulWidget {
   State<AppBarWidget> createState() => _AppBarWidgetState();
 }
 
-class _AppBarWidgetState extends State<AppBarWidget> {
+final class _AppBarWidgetState extends State<AppBarWidget> {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CircleAvatar(
-          backgroundImage:
-              AssetImage(Assets.png.beautifulIndianGirlWhiteSweater14610552107),
+        GestureDetector(
+          onTap: () {
+            Scaffold.of(context).openDrawer();
+          },
+          child: CircleAvatar(
+            backgroundImage: AssetImage(
+                Assets.png.beautifulIndianGirlWhiteSweater14610552107),
+          ),
         ),
         Spacer(),
         GestureDetector(
@@ -37,6 +42,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
             );
           },
           child: GlassCardWidget(
+            color: const Color.fromARGB(255, 60, 59, 59),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: AppPadding.x16),
               child: SizedBox(
@@ -54,30 +60,6 @@ class _AppBarWidgetState extends State<AppBarWidget> {
             ),
           ),
         ),
-        // DecoratedBox(
-        //   decoration: BoxDecoration(
-        //     color: Colors.white.withOpacity(0.2),
-        //     borderRadius: BorderRadius.circular(AppRadius.round),
-        //   ),
-        //   child: Padding(
-        //     padding: const EdgeInsets.symmetric(horizontal: AppPadding.x16),
-        //     child: DropdownButton<String>(
-        //       value: _selectedOption,
-        //       hint: Text('Select an option'),
-        //       items: _options.map((String option) {
-        //         return DropdownMenuItem<String>(
-        //           value: option,
-        //           child: Text(option),
-        //         );
-        //       }).toList(),
-        //       onChanged: (String? newValue) {
-        //         setState(() {
-        //           _selectedOption = newValue;
-        //         });
-        //       },
-        //     ),
-        //   ),
-        // ),
       ],
     );
   }

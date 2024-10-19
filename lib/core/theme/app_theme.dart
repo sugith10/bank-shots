@@ -7,7 +7,13 @@ import '../gen/fonts.gen.dart';
 final class AppTheme {
   static final ThemeData theme = ThemeData(
     primaryColor: AppColor.fontPrimary,
-    scaffoldBackgroundColor: AppColor.scaffold,
+    listTileTheme: ListTileThemeData(
+      textColor: AppColor.fontPrimary,
+    ),
+    drawerTheme: DrawerThemeData(
+      backgroundColor: AppColor.fontOpposite,
+    ),
+    scaffoldBackgroundColor: AppColor.fontOpposite,
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColor.scaffold,
     ),

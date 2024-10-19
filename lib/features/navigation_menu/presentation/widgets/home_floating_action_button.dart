@@ -18,6 +18,7 @@ final class HomeFloatingActionButton extends StatelessWidget {
         color: Colors.white,
       ),
       onPressed: () {
+        //context.push(SamplePage());
         CreateGoalRoute().push(context);
       },
       backgroundColor: AppColor.fab,
@@ -28,17 +29,3 @@ final class HomeFloatingActionButton extends StatelessWidget {
     );
   }
 }
-
-// LiquidSwipe.builder(
-//                 itemCount: AppColor.colorList.length,
-//                 itemBuilder: (context, index) => Container(
-//                   width: double.infinity,
-//                   decoration: BoxDecoration(
-//                     color: AppColor.colorList[index],
-//                     borderRadius: BorderRadius.only(
-//                       bottomLeft: Radius.circular(AppRadius.round),
-//                       bottomRight: Radius.circular(AppRadius.round),
-//                     ),
-//                   ),
-//                 ),
-//               )

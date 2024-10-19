@@ -1,9 +1,10 @@
 part of '../pages/create_goal_page.dart';
 
-final class _GoalAmountWidget extends StatelessWidget {
-  const _GoalAmountWidget({
+final class SetAmountWidget extends StatelessWidget {
+  const SetAmountWidget({
     required this.bgColor,
     required this.goalAmountController,
+    super.key,
   });
 
   final Color bgColor;
@@ -26,7 +27,7 @@ final class _GoalAmountWidget extends StatelessWidget {
         ),
         SizedBox(height: 20),
         Consumer(builder: (context, ref, _) {
-          final goal = ref.watch(goalProvider);
+          final goal = ref.watch(AppProvider.goalProvider);
           return Column(
             children: [
               DecoratedBox(
@@ -40,7 +41,7 @@ final class _GoalAmountWidget extends StatelessWidget {
                 child: GoalTextField(
                   controller: goalAmountController,
                   onChanged: (amount) => ref
-                      .read(goalProvider.notifier)
+                      .read(AppProvider.goalProvider.notifier)
                       .onValidGoalAmount(amount: amount),
                 ),
               ),

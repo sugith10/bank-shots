@@ -7,7 +7,7 @@ import 'package:gap/gap.dart';
 import '../../../../core/color/app_color.dart';
 import '../../../../core/const/app_padding.dart';
 import '../../../../core/gen/assets.gen.dart';
-import '../../../../core/providers/app_providers.dart';
+import '../../../../core/providers/app_provider.dart';
 
 final class GoalIconPickerBottomSheet {
   final List<String> _goalIcons = [
@@ -70,7 +70,7 @@ final class GoalIconPickerBottomSheet {
                           child: IconButton(
                             onPressed: () {
                               ref
-                                  .read(goalProvider.notifier)
+                                  .read(AppProvider.goalProvider.notifier)
                                   .onUpdateGoalIcon(icon: _goalIcons[index]);
                               context.pop();
                             },

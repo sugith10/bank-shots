@@ -1,15 +1,25 @@
-part of '../pages/create_goal_page.dart';
+import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/svg.dart';
 
-class _SetGoalTitleWidget extends ConsumerWidget {
-  const _SetGoalTitleWidget({
+import '../../../../core/color/app_color.dart';
+import '../../../../core/const/app_padding.dart';
+import '../../../../core/const/app_radius.dart';
+import '../../../../core/providers/app_provider.dart';
+import '../../../../core/util/color_util.dart';
+import 'goal_icon_picker_bottom_sheet.dart';
+import 'goal_text_filed.dart';
+
+class SetGoalTitleWidget extends ConsumerWidget {
+  const SetGoalTitleWidget({
     required this.bgColor,
     required this.controller,
-    required this.inputBorder,
+    super.key,
   });
 
   final Color bgColor;
   final TextEditingController controller;
-  final OutlineInputBorder inputBorder;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -38,8 +48,10 @@ class _SetGoalTitleWidget extends ConsumerWidget {
           padding: const EdgeInsets.symmetric(vertical: AppPadding.x16),
           child: GoalTextField(
             controller: controller,
-            onChanged: (value) =>
-                ref.read(goalProvider.notifier).onValidTitle(title: value),
+            minWidth: 200,
+            onChanged: (value) => ref
+                .read(AppProvider.goalProvider.notifier)
+                .onValidTitle(title: value),
           ),
         ),
       ],
@@ -52,7 +64,7 @@ final class _GoalIcon extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final goal = ref.watch(goalProvider);
+    final goal = ref.watch(AppProvider.goalProvider);
     return GestureDetector(
       onTap: () {
         GoalIconPickerBottomSheet().getIconSheet(context, ref);

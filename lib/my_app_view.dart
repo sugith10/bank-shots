@@ -6,7 +6,7 @@ import 'core/route/app_route.dart';
 
 final GoRouter _router = GoRouter(routes: $appRoutes);
 
-class MyAppView extends StatelessWidget {
+final class MyAppView extends StatelessWidget {
   const MyAppView({super.key});
 
   @override
@@ -15,6 +15,7 @@ class MyAppView extends StatelessWidget {
       title: 'Bank Shot',
       theme: AppTheme.theme,
       routerConfig: _router,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

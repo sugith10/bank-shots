@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/color/app_color.dart';
 import '../../../../core/const/app_padding.dart';
 import '../../../../core/const/app_radius.dart';
-import '../../../../core/providers/app_providers.dart';
+import '../../../../core/providers/app_provider.dart';
 
 final class CreateGoalButton extends ConsumerWidget {
   const CreateGoalButton({
@@ -14,7 +14,7 @@ final class CreateGoalButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final goal = ref.watch(goalProvider);
+    final goal = ref.watch(AppProvider.goalProvider);
     return TextButton(
       style: TextButton.styleFrom(
         overlayColor: goal.next ? null : Colors.transparent,
@@ -27,9 +27,9 @@ final class CreateGoalButton extends ConsumerWidget {
       ),
       onPressed: () {
         if (!goal.validTitle && goal.next) {
-          ref.read(goalProvider.notifier).onSetGoalName();
+          ref.read(AppProvider.goalProvider.notifier).onSetGoalName();
         } else if (!goal.validGoalAmount && goal.next) {
-          ref.read(goalProvider.notifier).onSetGoalAmout();
+          ref.read(AppProvider.goalProvider.notifier).onSetGoalAmout();
         }
       },
       child: Padding(
