@@ -8,6 +8,7 @@ Bank Shots is a financial goal setting and tracking application.
 
 ### Directory Structure
 
+```
 bank_shots/
 ├── melos.yaml
 ├── apps/
@@ -25,3 +26,4 @@ bank_shots/
 ├── services/
 │   └── ...
 └── ...
+```
