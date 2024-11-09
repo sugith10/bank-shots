@@ -1,3 +1,4 @@
+import 'package:core_utils/padding/app_padding.dart';
 import 'package:flutter/material.dart';
 
 final class CardRow extends StatelessWidget {

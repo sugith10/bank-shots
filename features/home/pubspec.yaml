@@ -1,12 +1,13 @@
 name: home
 description: "A new Flutter package project."
 version: 0.0.1
+publish_to: none
 
 environment:
   sdk: 3.5.0
-  flutter: 3.24.0
 
 dependencies:
+  core_utils: ^0.0.1
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.5.3

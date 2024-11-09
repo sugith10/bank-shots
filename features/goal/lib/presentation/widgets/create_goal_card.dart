@@ -1,7 +1,6 @@
+import 'package:core_utils/padding/app_padding.dart';
+import 'package:core_utils/radius/app_radius.dart';
 import 'package:flutter/material.dart';
-
-import '../../../../../apps/bank_shots/lib/core/const/app_padding.dart';
-import '../../../../../apps/bank_shots/lib/core/const/app_radius.dart';
 
 final class CreateGoalCard extends StatelessWidget {
   const CreateGoalCard({
@@ -22,7 +21,6 @@ final class CreateGoalCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(AppRadius.round),
           bottomRight: Radius.circular(AppRadius.round),
         ),
       ),

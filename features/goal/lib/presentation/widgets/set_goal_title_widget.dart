@@ -1,11 +1,10 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_utils/color/app_color.dart';
+import 'package:core_utils/color/color_util.dart';
+import 'package:core_utils/padding/app_padding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../../apps/bank_shots/lib/core/color/app_color.dart';
-import '../../../../../apps/bank_shots/lib/core/const/app_padding.dart';
-import '../../../../../apps/bank_shots/lib/core/providers/app_provider.dart';
-import '../../../../../apps/bank_shots/lib/core/util/color_util.dart';
 import 'goal_icon.dart';
 import 'goal_icon_picker_bottom_sheet.dart';
 import 'goal_text_filed.dart';

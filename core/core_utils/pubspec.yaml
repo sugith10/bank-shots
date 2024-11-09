@@ -1,11 +1,10 @@
 name: core_utils
 description: "A new Flutter package project."
 version: 0.0.1
-# homepage:
+publish_to: none
 
 environment:
   sdk: 3.5.0
-  flutter: 3.24.0
 
 dependencies:
   flutter:

@@ -1,5 +1,4 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../../../apps/bank_shots/lib/core/gen/assets.gen.dart';
 import 'goal_state.dart';
 
 final class GoalNotifier extends StateNotifier<GoalState> {

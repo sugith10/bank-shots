@@ -1,4 +1,6 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_utils/color/app_color.dart';
+import 'package:core_utils/color/color_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';

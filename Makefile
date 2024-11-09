@@ -1,29 +1,62 @@
-.PHONY: help clean build test format analyze bootstrap
+bootstrap:
+	@echo ""
+	@echo "🚀 Bootstrapping Bank Shot Flutter project..."
+	@echo "----------------------------------------"
+	@melos bootstrap
+	@echo ""
+	@echo "📦 Generating files..."
+	@melos ga
+	@echo ""
+	@echo "------------------------------"
+	@echo "🚀 Bootstrapping completed! 🚀🚀🚀"
 
-help:
-	@echo "Available commands:"
-	@echo "  clean     - Clean build directories"
-	@echo "  build     - Build all packages"
-	@echo "  test      - Run all tests"
-	@echo "  format    - Format all code"
-	@echo "  analyze   - Analyze all code"
-	@echo "  bootstrap - Bootstrap melos dependencies"
 
 clean:
-	flutter clean
-	melos clean
+	@echo "🧹 Cleaning pub, package links, generated files..."
+	@echo "----------------------------------------"
+	@melos clean_generated
+	@melos clean
+	@echo "🚀 Cleaning completed! 🚀🚀🚀"
 
-build:
-	melos run build
+cleanAll:
+	@echo "🧹 Cleaning pub, package links, generated files, and destroy fvm cache..."
+	@echo "----------------------------------------"
+	@melos clean_generated
+	@melos clean
+	@fvm destroy
+	@echo "🚀 Cleaning completed! 🚀🚀🚀"
 
-test:
-	melos run test
+reinstall:
+	@echo "📦 Reinstalling development environment..."
+	@echo "----------------------------------------"
+	@melos clean_generated
+	@melos clean
+	@dart pub global deactivate melos
+	@yes | fvm destroy
+	@fvm install
+	@fvm doctor
+	@dart pub global activate melos
+	@melos bootstrap
+	@melos generate_all
+	@echo "🚀 Reinstalling completed! 🚀🚀🚀"
 
 format:
-	dart format .
+	@echo "🧹 Formatting files..."
+	@melos exec -c 5 --fail-fast --order-dependents -- "dart format . --set-exit-if-changed"
+	@echo "🚀 Formatting completed! 🚀🚀🚀"
 
-analyze:
-	melos run analyze
+generate:
+	@echo "📦 Generating files..."
+	@melos exec -c 3 --fail-fast --order-dependents --depends-on="build_runner" -- "dart run build_runner build --delete-conflicting-outputs"
+	@echo "🚀 Generation completed! 🚀🚀🚀"
 
-bootstrap:
-	melos bootstrap
+test:
+	@echo "🧪 Running tests..."
+	@melos exec -c 1 --fail-fast --order-dependents -- "flutter test"
+	@echo "🚀 Tests completed! 🚀🚀🚀"
+
+digraph:
+	@melos list --gviz
+
+danger:
+	@yarn danger ci

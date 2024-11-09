@@ -1,3 +1,4 @@
+import 'package:core_utils/finacial_qoutes/financial_qoutes.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

@@ -1,4 +1,12 @@
+import 'package:core_utils/padding/app_padding.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+import 'package:home/home/widgets/goal_grid_view_widget.dart';
+
+import '../widgets/app_bar_widget.dart';
+import '../widgets/home_drawer_widget.dart';
+import '../widgets/home_floating_action_button_widget.dart';
+import '../widgets/home_info_naked_card_widget.dart';
 
 final class HomePage extends StatelessWidget {
   const HomePage({super.key});

@@ -1,4 +1,6 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:core_utils/padding/app_padding.dart';
+import 'package:core_utils/radius/app_radius.dart';
 import 'package:flutter/material.dart';
 
 final class CreateGoalBackGroundCard extends StatelessWidget {
