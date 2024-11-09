@@ -1,0 +1,29 @@
+name: bank_shots_workspace
+repository: https://github.com/sugith10/bank-shots
+
+packages:
+  - apps/*
+  - core/*
+  - features/*
+  - services/*
+
+command:
+  bootstrap:
+    environment:
+      sdk: 3.5.0
+      flutter: 3.24.0
+
+    dependencies:
+      go_router: ^14.2.3
+      intl: ^0.19.0
+
+  dev_dependencies:
+    build_runner: ^2.4.12
+
+  usePubspecOverrides: true
+
+scripts:
+  analyze:
+    run: melos exec -- flutter analyze
+  format:
+    run: melos exec -- flutter format .
