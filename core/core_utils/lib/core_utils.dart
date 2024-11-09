@@ -1,7 +1,3 @@
-library core_utils;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'color/app_color.dart';
+export 'padding/app_padding.dart';
+export 'radius/app_radius.dart';

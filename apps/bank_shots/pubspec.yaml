@@ -5,7 +5,7 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.5.3
+  sdk: 3.5.0
 
 dependencies:
   animate_do: ^3.3.4
@@ -15,7 +15,7 @@ dependencies:
   flutter_riverpod: ^2.5.3
   flutter_svg: ^2.0.10
   gap: ^3.0.1
-  go_router: ^14.3.0
+  go_router: ^14.2.3
   google_fonts: ^6.2.1
   hive_ce: ^2.6.0
   hive_ce_flutter: ^2.1.0
@@ -39,30 +39,3 @@ flutter:
   # - assets/png/
   # - assets/svg/
   # - assets/webp/
-
-  fonts:
-    - family: outfit
-      fonts:
-        - asset: assets/fonts/outfit/Outfit-Regular.ttf
-        - asset: assets/fonts/outfit/Outfit-Thin.ttf
-          weight: 100
-        - asset: assets/fonts/outfit/Outfit-ExtraLight.ttf
-          weight: 200
-        - asset: assets/fonts/outfit/Outfit-Light.ttf
-          weight: 300
-        - asset: assets/fonts/outfit/Outfit-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/outfit/Outfit-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/outfit/Outfit-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/outfit/Outfit-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/outfit/Outfit-ExtraBold.ttf
-          weight: 800
-        - asset: assets/fonts/outfit/Outfit-Black.ttf
-          weight: 900
-
-flutter_gen:
-  integrations:
-  output: lib/core/gen/

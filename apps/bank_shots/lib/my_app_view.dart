@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import 'core/theme/app_theme.dart';
-import 'core/route/app_route.dart';
-
-final GoRouter _router = GoRouter(routes: $appRoutes);
+final GoRouter _router = GoRouter(routes: []);
 
 final class MyAppView extends StatelessWidget {
   const MyAppView({super.key});
@@ -13,7 +10,7 @@ final class MyAppView extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Bank Shot',
-      theme: AppTheme.theme,
+      //  theme: AppTheme.theme,
       routerConfig: _router,
       debugShowCheckedModeBanner: false,
     );
