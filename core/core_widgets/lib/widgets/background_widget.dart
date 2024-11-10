@@ -1,3 +1,4 @@
+import 'package:core_utils/color/app_color.dart';
 import 'package:flutter/widgets.dart';
 
 final class BackgroundWidget extends StatelessWidget {
