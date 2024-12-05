@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../color/app_color.dart';
 import '../radius/app_radius.dart';
 
-final class AppTheme {
+abstract final class AppTheme {
   static final ThemeData theme = ThemeData(
     dividerColor: AppColor.swipeLight,
     dividerTheme: DividerThemeData(

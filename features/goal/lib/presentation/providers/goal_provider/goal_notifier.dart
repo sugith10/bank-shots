@@ -1,11 +1,14 @@
+import 'package:core_assets/gen/assets.gen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'goal_state.dart';
 
 final class GoalNotifier extends StateNotifier<GoalState> {
   GoalNotifier()
-      : super(GoalState(
-          icon: Assets.svg.pyramid,
-        ));
+      : super(
+          GoalState(
+            icon: Assets.svg.pyramid,
+          ),
+        );
 
   void onUpdateGoalIcon({required String icon}) {
     state = state.copyWith(icon: icon);
@@ -63,7 +66,7 @@ final class GoalNotifier extends StateNotifier<GoalState> {
           state = state.copyWith(
             next: false,
             error: true,
-            message: 'Balance can\'t be greater than the goal amount',
+            message: "Balance can't be greater than the goal amount",
           );
         }
       } else {

@@ -23,8 +23,8 @@ class SetGoalTitleWidget extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
       children: [
-        Spacer(),
-        _GoalIcon(),
+        const Spacer(),
+        const _GoalIcon(),
         Text('Set your goal icon',
             style: context.bodyMedium?.copyWith(
                 color: ColorUtil.get(
@@ -32,7 +32,7 @@ class SetGoalTitleWidget extends ConsumerWidget {
               dark: AppColor.shadowFontDark,
               light: AppColor.shadowFont,
             ))).paddingOnly(top: AppPadding.x12),
-        Spacer(),
+        const Spacer(),
         Text(
           'Name your goal',
           style: context.titleLarge?.copyWith(

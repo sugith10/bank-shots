@@ -1,4 +1,9 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_utils/color/app_color.dart';
+import 'package:core_utils/padding/app_padding.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 final class HomeInfoNakedCardWidget extends StatelessWidget {
   const HomeInfoNakedCardWidget({

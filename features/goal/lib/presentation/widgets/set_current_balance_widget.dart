@@ -108,7 +108,7 @@ final class SetCurrentBalanceWidget extends StatelessWidget {
         //     );
         //   },
         // ),
-        Spacer(),
+        const Spacer(),
       ],
     );
   }

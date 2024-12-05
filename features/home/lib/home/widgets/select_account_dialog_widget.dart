@@ -1,4 +1,7 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 final class SelectAccountDailogWidget extends StatelessWidget {
   const SelectAccountDailogWidget({
@@ -41,7 +44,7 @@ final class SelectAccountDailogWidget extends StatelessWidget {
                 trailing: IconButton.filled(
                   onPressed: () {},
                   icon: Icon(
-                    IconlyLight.edit,
+                    AppIcons.edit,
                     color: Colors.white,
                   ),
                   style: ElevatedButton.styleFrom(

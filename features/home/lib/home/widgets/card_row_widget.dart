@@ -1,5 +1,8 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_utils/formatter/amount_formatter.dart';
 import 'package:core_utils/padding/app_padding.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 final class CardRow extends StatelessWidget {
   final String title;

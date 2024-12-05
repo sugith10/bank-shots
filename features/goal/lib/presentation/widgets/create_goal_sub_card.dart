@@ -1,13 +1,12 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_assets/gen/assets.gen.dart';
+import 'package:core_utils/color/color_util.dart';
+import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../../apps/bank_shots/lib/core/color/app_color.dart';
-import '../../../../../apps/bank_shots/lib/core/const/app_padding.dart';
-import '../../../../../apps/bank_shots/lib/core/gen/assets.gen.dart';
-import '../../../../../apps/bank_shots/lib/core/util/color_util.dart';
-import '../../../../../apps/bank_shots/lib/core/widgets/glass_card_widget.dart';
 import 'goal_icon.dart';
 
 final class CreateGoalSubCard extends ConsumerWidget {
@@ -52,12 +51,12 @@ final class CreateGoalSubCard extends ConsumerWidget {
 
           child: Column(
             children: [
-              Spacer(),
+              const Spacer(),
               GoalIcon(
                 icon: Assets.svg.apple,
                 showDecoration: false,
               ),
-              Gap(20),
+              const Gap(20),
               Text(
                 'Credit Card Payment',
                 style: context.displaySmall?.copyWith(
@@ -70,7 +69,7 @@ final class CreateGoalSubCard extends ConsumerWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              Gap(15),
+              const Gap(15),
               Text(
                 '\$ 5000',
                 style: context.displayLarge?.copyWith(
@@ -82,9 +81,9 @@ final class CreateGoalSubCard extends ConsumerWidget {
                   ),
                 ),
               ),
-              Gap(10),
-              Divider(),
-              Gap(10),
+              const Gap(10),
+              const Divider(),
+              const Gap(10),
               Text(
                 'Current Balance',
                 style: context.titleLarge?.copyWith(
@@ -96,7 +95,7 @@ final class CreateGoalSubCard extends ConsumerWidget {
                   ),
                 ),
               ),
-              Gap(10),
+              const Gap(10),
               Text(
                 '\$ 5000',
                 style: context.displaySmall?.copyWith(
@@ -108,7 +107,7 @@ final class CreateGoalSubCard extends ConsumerWidget {
                   ),
                 ),
               ),
-              Spacer(),
+              const Spacer(),
             ],
           ),
         ),

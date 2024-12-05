@@ -1,4 +1,7 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import 'card_row_widget.dart';
 

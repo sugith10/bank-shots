@@ -1,13 +1,10 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_assets/gen/assets.gen.dart';
+import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
-
-import '../../../../../apps/bank_shots/lib/core/color/app_color.dart';
-import '../../../../../apps/bank_shots/lib/core/const/app_padding.dart';
-import '../../../../../apps/bank_shots/lib/core/gen/assets.gen.dart';
-import '../../../../../apps/bank_shots/lib/core/providers/app_provider.dart';
 
 final class GoalIconPickerBottomSheet {
   final List<String> _goalIcons = [
@@ -37,7 +34,7 @@ final class GoalIconPickerBottomSheet {
     Assets.svg.tree,
     Assets.svg.trunks,
     Assets.svg.watch,
-    Assets.svg.yatch
+    Assets.svg.yatch,
   ];
 
   void getIconSheet(BuildContext context, WidgetRef ref) {
@@ -58,7 +55,7 @@ final class GoalIconPickerBottomSheet {
                   endIndent: context.width * 0.35,
                 ),
               ),
-              Gap(20),
+              const Gap(20),
               Expanded(
                 child: Scrollbar(
                   thumbVisibility: true,
@@ -86,7 +83,7 @@ final class GoalIconPickerBottomSheet {
                   ),
                 ),
               ),
-              Gap(40)
+              const Gap(40),
             ],
           ),
         );

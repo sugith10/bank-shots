@@ -1,3 +1,5 @@
+import 'package:core_utils/color/app_color.dart';
+import 'package:core_utils/radius/app_radius.dart';
 import 'package:flutter/widgets.dart';
 
 final class GoalGridView extends StatelessWidget {

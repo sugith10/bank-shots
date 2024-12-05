@@ -32,7 +32,7 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(AppProvider.qouteProvider.notifier).onUpdateQoute();
+      //ref.read(AppProvider.qouteProvider.notifier).onUpdateQoute();
     });
   }
 
@@ -56,7 +56,7 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
               height: size.height,
               color: AppColor.secondary,
               delay: 1500,
-              child: Column(
+              child: const Column(
                 children: [
                   Spacer(),
                   CreateGoalButton(
@@ -79,7 +79,7 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
                     color: AppColor.colorList[index],
                     child: Column(
                       children: [
-                        Spacer(flex: 2),
+                        const Spacer(flex: 2),
                         CreateGoalSubCard(
                           titleController: _goalController,
                           goalAmountController: _goalAmountController,
@@ -87,7 +87,7 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
                           height: size.height * 0.65,
                           bgColor: AppColor.colorList[index],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         // _SwipeText(
                         //   color: AppColor.colorList[index],
                         // )

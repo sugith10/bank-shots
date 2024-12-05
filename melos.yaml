@@ -16,6 +16,7 @@ command:
     dependencies:
       core_utils: ^0.0.1
       core_widgets: ^0.0.1
+      core_assets: ^0.0.1
       goal: ^0.0.1
       home: ^0.0.1
       flutter_riverpod: ^2.5.3
@@ -30,5 +31,16 @@ command:
 scripts:
   analyze:
     run: melos exec -- flutter analyze
+
   format:
     run: melos exec -- flutter format .
+
+  g:
+    description: Build all generated files for all packages.
+    run: find . \( -name '*.g.dart' -o -name '*.freezed.dart' -o -name '*.gen.dart' \) -type f -delete; dart run build_runner build --delete-conflicting-outputs
+    exec:
+      concurrency: 3
+      failFast: true
+      orderDependents: true
+    packageFilters:
+      dependsOn: "build_runner"

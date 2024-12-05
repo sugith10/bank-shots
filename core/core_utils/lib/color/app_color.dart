@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-@immutable
-final class AppColor {
-  const AppColor._();
+abstract final class AppColor {
   static const scaffold = Color(0xFF1a1a1a);
   static const fontPrimary = Colors.white;
   static const fontSecondary = Colors.grey;

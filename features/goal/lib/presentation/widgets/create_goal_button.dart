@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final class CreateGoalButton extends ConsumerWidget {
-  final String text;
   const CreateGoalButton({
     required this.text,
     super.key,
   });
+  final String text;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

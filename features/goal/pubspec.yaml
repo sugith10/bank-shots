@@ -9,14 +9,15 @@ environment:
 dependencies:
   animate_do: ^3.3.4
   awesome_extensions: ^2.0.18
+  core_assets: ^0.0.1
   core_utils: ^0.0.1
+  core_widgets: ^0.0.1
   flutter:
     sdk: flutter
-  flutter_svg: ^2.0.14
-  liquid_swipe: ^3.1.0
   flutter_riverpod: ^2.5.3
-  gap: ^3.0.1
+  flutter_svg: ^2.0.14
   go_router: ^14.2.3
+  liquid_swipe: ^3.1.0
 
 dev_dependencies:
   flutter_test:

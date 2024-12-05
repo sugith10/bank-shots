@@ -1,8 +1,6 @@
+import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-import '../../../../../apps/bank_shots/lib/core/const/app_padding.dart';
-import '../../../../../apps/bank_shots/lib/core/const/app_radius.dart';
 
 final class GoalIcon extends StatelessWidget {
   const GoalIcon({

@@ -1,5 +1,5 @@
 name: core_utils
-description: "A new Flutter package project."
+description: "Core utility package for the project."
 version: 0.0.1
 publish_to: none
 
@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.5.3
+  iconly: ^1.0.1
 
 dev_dependencies:
   flutter_test:

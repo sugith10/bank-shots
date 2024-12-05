@@ -1,3 +1,7 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_assets/gen/assets.gen.dart';
+import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'select_account_dialog_widget.dart';
@@ -22,16 +26,17 @@ final class _AppBarWidgetState extends State<AppBarWidget> {
           },
           child: CircleAvatar(
             backgroundImage: AssetImage(
-                Assets.png.beautifulIndianGirlWhiteSweater14610552107),
+              Assets.png.beautifulIndianGirlWhiteSweater14610552107,
+            ),
           ),
         ),
-        Spacer(),
+        const Spacer(),
         GestureDetector(
           onTap: () {
             showDialog(
               context: context,
               builder: (context) {
-                return Dialog(child: SelectAccountDailogWidget());
+                return const Dialog(child: SelectAccountDailogWidget());
               },
             );
           },
@@ -45,8 +50,8 @@ final class _AppBarWidgetState extends State<AppBarWidget> {
                   child: Row(
                     children: [
                       Text('Account B', style: context.titleMedium),
-                      Gap(5),
-                      Icon(IconlyBroken.arrow_down_2),
+                      const Gap(5),
+                      const Icon(AppIcons.arrowDown),
                     ],
                   ),
                 ),

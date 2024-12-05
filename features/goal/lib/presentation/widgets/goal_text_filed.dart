@@ -1,7 +1,5 @@
+import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
-
-import '../../../../../apps/bank_shots/lib/core/color/app_color.dart';
-import '../../../../../apps/bank_shots/lib/core/const/app_radius.dart';
 
 final class GoalTextField extends StatelessWidget {
   const GoalTextField({
@@ -38,7 +36,7 @@ final class GoalTextField extends StatelessWidget {
             fillColor: Colors.white.withOpacity(0.6),
             filled: true,
           ),
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 25,
             color: AppColor.fontOpposite,
           ),
