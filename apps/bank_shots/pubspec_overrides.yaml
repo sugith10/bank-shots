@@ -1,4 +1,4 @@
-# melos_managed_dependency_overrides: core_utils,core_widgets,core_assets,core_provider
+# melos_managed_dependency_overrides: core_provider,core_assets,core_utils,core_widgets,home
 dependency_overrides:
   core_assets:
     path: ../../core/core_assets
@@ -8,3 +8,5 @@ dependency_overrides:
     path: ../../core/core_utils
   core_widgets:
     path: ../../core/core_widgets
+  home:
+    path: ../../features/home

@@ -25,12 +25,12 @@ final class FinancialQoutes {
     "The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself. – Mark Caine",
     "Without goals, and plans to reach them, you are like a ship that has set sail with no destination. – Fitzhugh Dodson",
     "Beware of little expenses; a small leak will sink a great ship. – Benjamin Franklin",
-    "Financial fitness is not a pipe dream or a state of mind. It’s a reality if you are willing to pursue it and embrace it. – Will Robinson"
+    "Financial fitness is not a pipe dream or a state of mind. It’s a reality if you are willing to pursue it and embrace it. – Will Robinson",
   ];
 
   static String getRandomQuote() {
     final random = Random();
-    int randomIndex = random.nextInt(_quotes.length);
+    final int randomIndex = random.nextInt(_quotes.length);
     return _quotes[randomIndex];
   }
 }

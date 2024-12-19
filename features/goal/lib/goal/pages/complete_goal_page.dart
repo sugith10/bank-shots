@@ -5,10 +5,8 @@ final class CompleteGoalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [],
-      ),
+    return const Scaffold(
+      body: Column(),
     );
   }
 }

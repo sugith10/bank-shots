@@ -1,11 +1,10 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_assets/gen/assets.gen.dart';
+import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gap/gap.dart';
 
 import 'goal_icon.dart';
 
@@ -63,21 +62,21 @@ final class CreateGoalSubCard extends ConsumerWidget {
                   fontWeight: FontWeight.w500,
                   color: ColorUtil.get(
                     backgroundColor: bgColor,
-                    dark: AppColor.fontOpposite,
-                    light: AppColor.fontPrimary,
+                    dark: CoreColor.fontOpposite,
+                    light: CoreColor.fontPrimary,
                   ),
                 ),
                 textAlign: TextAlign.center,
               ),
               const Gap(15),
               Text(
-                '\$ 5000',
+                r'$ 5000',
                 style: context.displayLarge?.copyWith(
                   fontWeight: FontWeight.w700,
                   color: ColorUtil.get(
                     backgroundColor: bgColor,
-                    dark: AppColor.fontOpposite,
-                    light: AppColor.fontPrimary,
+                    dark: CoreColor.fontOpposite,
+                    light: CoreColor.fontPrimary,
                   ),
                 ),
               ),
@@ -90,20 +89,20 @@ final class CreateGoalSubCard extends ConsumerWidget {
                   // fontWeight: FontWeight.w700,
                   color: ColorUtil.get(
                     backgroundColor: bgColor,
-                    dark: AppColor.fontOpposite,
-                    light: AppColor.fontPrimary,
+                    dark: CoreColor.fontOpposite,
+                    light: CoreColor.fontPrimary,
                   ),
                 ),
               ),
               const Gap(10),
               Text(
-                '\$ 5000',
+                r'$ 5000',
                 style: context.displaySmall?.copyWith(
                   fontWeight: FontWeight.w700,
                   color: ColorUtil.get(
                     backgroundColor: bgColor,
-                    dark: AppColor.fontOpposite,
-                    light: AppColor.fontPrimary,
+                    dark: CoreColor.fontOpposite,
+                    light: CoreColor.fontPrimary,
                   ),
                 ),
               ),

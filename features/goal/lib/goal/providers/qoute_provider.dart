@@ -1,12 +1,11 @@
+import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/finacial_qoutes/financial_qoutes.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 @immutable
 final class Qoute {
-  final String qoute;
-
   const Qoute({required this.qoute});
+  final String qoute;
 }
 
 final class QouteProvider extends StateNotifier<Qoute> {

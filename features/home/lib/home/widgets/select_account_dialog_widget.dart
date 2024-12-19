@@ -1,7 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 final class SelectAccountDailogWidget extends StatelessWidget {
   const SelectAccountDailogWidget({
@@ -15,7 +15,7 @@ final class SelectAccountDailogWidget extends StatelessWidget {
     return Container(
       width: size.width - 40,
       decoration: BoxDecoration(
-        color: AppColor.card,
+        color: CoreColor.card,
         borderRadius: BorderRadius.circular(AppRadius.x20),
       ),
       padding: const EdgeInsets.all(AppPadding.x20),
@@ -26,11 +26,11 @@ final class SelectAccountDailogWidget extends StatelessWidget {
             'Select an account',
             style: context.titleLarge,
           ),
-          Gap(20),
+          const Gap(20),
           ClipRRect(
             borderRadius: BorderRadius.circular(AppRadius.round),
             child: Material(
-              color: AppColor.card,
+              color: CoreColor.card,
               child: ListTile(
                 style: ListTileStyle.list,
                 leading: const CircleAvatar(),
@@ -43,7 +43,7 @@ final class SelectAccountDailogWidget extends StatelessWidget {
                 },
                 trailing: IconButton.filled(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     AppIcons.edit,
                     color: Colors.white,
                   ),
@@ -54,7 +54,7 @@ final class SelectAccountDailogWidget extends StatelessWidget {
               ),
             ),
           ),
-          Gap(50),
+          const Gap(50),
           Row(
             children: [
               Expanded(

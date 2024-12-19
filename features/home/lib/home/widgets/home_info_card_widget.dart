@@ -1,7 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 import 'card_row_widget.dart';
 
@@ -31,7 +31,7 @@ final class HomeInfoCard extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Gap(20),
+            const Gap(20),
             Text(
               'Total',
               style: context.bodyLarge?.copyWith(
@@ -39,13 +39,13 @@ final class HomeInfoCard extends StatelessWidget {
               ),
             ),
             Text(
-              '\$ 125000',
+              r'$ 125000',
               style: context.headlineLarge?.copyWith(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Gap(20),
+            const Gap(20),
             const CardRow(
               title: 'Target',
               amount: 25000,
@@ -65,17 +65,17 @@ final class HomeInfoCard extends StatelessWidget {
               title: 'Remaining',
               amount: 25000,
             ),
-            Gap(20),
+            const Gap(20),
             TextButton(
               onPressed: () {},
               child: Text(
                 'More Details >>',
                 style: context.bodySmall?.copyWith(
-                  color: AppColor.shadowFont,
+                  color: CoreColor.shadowFont,
                 ),
               ),
             ),
-            Gap(10),
+            const Gap(10),
           ],
         ),
       ),

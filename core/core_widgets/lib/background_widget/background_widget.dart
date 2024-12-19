@@ -1,25 +1,25 @@
-import 'package:core_utils/color/app_color.dart';
+import 'package:core_utils/core_utils.dart';
 import 'package:flutter/widgets.dart';
 
 final class BackgroundWidget extends StatelessWidget {
-  final Widget child;
   const BackgroundWidget({
     required this.child,
     super.key,
   });
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: double.maxFinite,
       width: double.maxFinite,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            AppColor.primary,
-            AppColor.scaffold,
+            CoreColor.primary,
+            CoreColor.scaffold,
           ],
         ),
       ),

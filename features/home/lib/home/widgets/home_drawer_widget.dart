@@ -1,7 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 final class HomeDrawer extends StatelessWidget {
   const HomeDrawer({
@@ -23,19 +23,19 @@ final class HomeDrawer extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppRadius.x10),
               ),
               splashColor: Colors.white.withOpacity(0.1),
-              title: Text('Item 1'),
+              title: const Text('Item 1'),
               onTap: () {
                 context.pop();
               },
             ),
           ),
           ListTile(
-            title: Text('Item 2'),
+            title: const Text('Item 2'),
             onTap: () {},
           ),
-          Spacer(),
-          Text('Version 1.0.0'),
-          Gap(40),
+          const Spacer(),
+          const Text('Version 1.0.0'),
+          const Gap(40),
         ],
       ),
     );

@@ -1,1 +1,1 @@
-export 'app_color.dart';
+export 'core_color.dart';

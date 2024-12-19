@@ -1,9 +1,9 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
-import 'package:core_utils/color/app_color.dart';
-import 'package:core_utils/padding/app_padding.dart';
-import 'package:core_utils/radius/app_radius.dart';
+import 'package:core_provider/core_provider.dart';
+import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../goal_provider.dart';
 
 final class CreateGoalButton extends ConsumerWidget {
   const CreateGoalButton({
@@ -14,7 +14,7 @@ final class CreateGoalButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final goal = ref.watch(AppProvider.goalProvider);
+    final goal = ref.watch(CoreProvider.goalProvider);
     return TextButton(
       style: TextButton.styleFrom(
         overlayColor: goal.next ? null : Colors.transparent,
@@ -27,9 +27,9 @@ final class CreateGoalButton extends ConsumerWidget {
       ),
       onPressed: () {
         if (!goal.validTitle && goal.next) {
-          ref.read(AppProvider.goalProvider.notifier).onSetGoalName();
+          ref.read(CoreProvider.goalProvider.notifier).onSetGoalName();
         } else if (!goal.validGoalAmount && goal.next) {
-          ref.read(AppProvider.goalProvider.notifier).onSetGoalAmout();
+          ref.read(CoreProvider.goalProvider.notifier).onSetGoalAmout();
         }
       },
       child: Padding(
@@ -41,7 +41,7 @@ final class CreateGoalButton extends ConsumerWidget {
           text,
           style: context.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
-            color: goal.next ? Colors.white : AppColor.shadowFont,
+            color: goal.next ? Colors.white : CoreColor.shadowFont,
           ),
         ),
       ),

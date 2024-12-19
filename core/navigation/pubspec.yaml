@@ -1,5 +1,5 @@
-name: core_widgets
-description: "Core widget package"
+name: core_navigation
+description: "Core navigation package"
 version: 0.0.1
 publish_to: none
 
@@ -7,10 +7,9 @@ environment:
   sdk: 3.5.0
 
 dependencies:
-  core_utils: ^0.0.1
   flutter:
     sdk: flutter
-  gap: ^3.0.1
+  go_router: ^14.2.3
 
 dev_dependencies:
   flutter_lints: ^5.0.0

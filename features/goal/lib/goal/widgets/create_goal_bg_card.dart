@@ -24,10 +24,10 @@ final class CreateGoalBackGroundCard extends StatelessWidget {
       child: Container(
         height: height,
         width: double.infinity,
-        padding: EdgeInsets.all(AppPadding.x20),
+        padding: const EdgeInsets.all(AppPadding.x20),
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(AppRadius.round),
             bottomRight: Radius.circular(AppRadius.round),
           ),

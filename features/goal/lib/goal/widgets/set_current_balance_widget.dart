@@ -1,10 +1,11 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
-import 'package:core_utils/color/app_color.dart';
+import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';
+import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gap/gap.dart';
 
+import '../goal_provider.dart';
 import 'goal_text_filed.dart';
 
 final class SetCurrentBalanceWidget extends StatelessWidget {
@@ -21,71 +22,73 @@ final class SetCurrentBalanceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Spacer(flex: 2),
+        const Spacer(flex: 2),
         Text(
           'Goal Amount',
           style: context.titleLarge?.copyWith(
             color: ColorUtil.get(
               backgroundColor: bgColor,
-              dark: AppColor.fontOpposite,
-              light: AppColor.fontPrimary,
+              dark: CoreColor.fontOpposite,
+              light: CoreColor.fontPrimary,
             ),
           ),
         ),
         FittedBox(
           child: Consumer(
             builder: (_, WidgetRef ref, __) {
-              final goal = ref.watch(AppProvider.goalProvider);
+              final goal = ref.watch(CoreProvider.goalProvider);
               return Text(
                 '\$ ${goal.goalAmount}',
                 style: context.displayLarge?.copyWith(
                   fontWeight: FontWeight.w900,
                   color: ColorUtil.get(
                     backgroundColor: bgColor,
-                    dark: AppColor.fontOpposite,
-                    light: AppColor.fontPrimary,
+                    dark: CoreColor.fontOpposite,
+                    light: CoreColor.fontPrimary,
                   ),
                 ),
               );
             },
           ),
         ),
-        Spacer(),
+        const Spacer(),
         Text(
           'Enter amount you have now',
           style: context.titleLarge?.copyWith(
             color: ColorUtil.get(
               backgroundColor: bgColor,
-              dark: AppColor.fontOpposite,
-              light: AppColor.fontPrimary,
+              dark: CoreColor.fontOpposite,
+              light: CoreColor.fontPrimary,
             ),
           ),
         ),
-        Gap(20),
+        const Gap(20),
         Consumer(
           builder: (_, WidgetRef ref, __) {
-            final goal = ref.watch(AppProvider.goalProvider);
+            final goal = ref.watch(CoreProvider.goalProvider);
             return GoalTextField(
               controller: goalBalanceController,
-              borderColor: goal.error ? AppColor.error : null,
+              borderColor: goal.error ? CoreColor.error : null,
               onChanged: (amount) => ref
-                  .read(AppProvider.goalProvider.notifier)
+                  .read(CoreProvider.goalProvider.notifier)
                   .onValidCurrentBalanceAmount(amount: amount),
             );
           },
         ),
-        Gap(10),
+        const Gap(10),
         Align(
           alignment: FractionalOffset.bottomLeft,
-          child: Consumer(builder: (_, WidgetRef ref, __) {
-            final goal = ref.watch(AppProvider.goalProvider);
-            return Text(
-              goal.message,
-              style: context.titleMedium?.copyWith(
-                color: AppColor.error,
-              ),
-            );
-          }),
+          child: Consumer(
+            builder: (_, WidgetRef ref, __) {
+              final goal = ref.watch(CoreProvider.goalProvider);
+              return Text(
+                goal.message,
+                style: context.titleMedium?.copyWith(
+                  color: CoreColor.error,
+                ),
+              );
+            },
+          ),
         ),
         // Consumer(
         //   builder: (_, WidgetRef ref, __) {
@@ -102,8 +105,8 @@ final class SetCurrentBalanceWidget extends StatelessWidget {
         //       label: goal.currentBalance.toString(),
         //       activeColor: ColorUtil.get(
         //         backgroundColor: bgColor,
-        //         dark: AppColor.fontOpposite,
-        //         light: AppColor.fontPrimary,
+        //         dark: CoreColor.fontOpposite,
+        //         light: CoreColor.fontPrimary,
         //       ),
         //     );
         //   },

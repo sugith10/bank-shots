@@ -1,6 +1,7 @@
 import 'package:core_assets/gen/assets.gen.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'goal_state.dart';
+import 'package:core_provider/core_provider.dart';
+import 'package:flutter/foundation.dart';
+part 'goal_state.dart';
 
 final class GoalNotifier extends StateNotifier<GoalState> {
   GoalNotifier()

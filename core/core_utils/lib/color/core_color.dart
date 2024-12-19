@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract final class AppColor {
+abstract final class CoreColor {
   static const scaffold = Color(0xFF1a1a1a);
   static const fontPrimary = Colors.white;
   static const fontSecondary = Colors.grey;

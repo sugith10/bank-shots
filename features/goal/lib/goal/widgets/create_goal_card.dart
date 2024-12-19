@@ -17,10 +17,10 @@ final class CreateGoalCard extends StatelessWidget {
     return Container(
       height: double.infinity,
       width: double.infinity,
-      padding: EdgeInsets.all(AppPadding.x20),
+      padding: const EdgeInsets.all(AppPadding.x20),
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomRight: Radius.circular(AppRadius.round),
         ),
       ),

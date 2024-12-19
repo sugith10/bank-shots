@@ -1,8 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
-import 'package:core_utils/color/app_color.dart';
-import 'package:core_utils/padding/app_padding.dart';
+import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final class HomeInfoNakedCardWidget extends StatelessWidget {
@@ -25,7 +24,7 @@ final class HomeInfoNakedCardWidget extends StatelessWidget {
               ),
             ),
           ),
-          Gap(20),
+          const Gap(20),
           FittedBox(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,7 +37,7 @@ final class HomeInfoNakedCardWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                Gap(10),
+                const Gap(10),
                 Text(
                   '₹Total',
                   style: GoogleFonts.spaceGrotesk(
@@ -50,31 +49,30 @@ final class HomeInfoNakedCardWidget extends StatelessWidget {
               ],
             ),
           ),
-          Gap(10),
-          Divider(),
-          Gap(10),
+          const Gap(10),
+          const Divider(),
+          const Gap(10),
           FittedBox(
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                _DashBoardText(
+                const _DashBoardText(
                   title: 'Target',
                 ),
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: AppPadding.x20),
                   child: Align(
-                    alignment: Alignment.center,
                     child: Container(
-                        width: 2,
-                        height: 20,
-                        decoration: BoxDecoration(
-                          color: AppColor.swipeLight,
-                        )),
+                      width: 2,
+                      height: 20,
+                      decoration: BoxDecoration(
+                        color: CoreColor.swipeLight,
+                      ),
+                    ),
                   ),
                 ),
-                _DashBoardText(
+                const _DashBoardText(
                   title: 'Remaining',
                 ),
               ],
@@ -87,10 +85,10 @@ final class HomeInfoNakedCardWidget extends StatelessWidget {
 }
 
 final class _DashBoardText extends StatelessWidget {
-  final String title;
   const _DashBoardText({
     required this.title,
   });
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +103,7 @@ final class _DashBoardText extends StatelessWidget {
             ),
           ),
         ),
-        Gap(10),
+        const Gap(10),
         Text(
           '₹5,58k',
           style: GoogleFonts.spaceGrotesk(

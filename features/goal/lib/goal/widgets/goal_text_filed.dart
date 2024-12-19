@@ -38,7 +38,7 @@ final class GoalTextField extends StatelessWidget {
           ),
           style: const TextStyle(
             fontSize: 25,
-            color: AppColor.fontOpposite,
+            color: CoreColor.fontOpposite,
           ),
           onChanged: onChanged,
         ),

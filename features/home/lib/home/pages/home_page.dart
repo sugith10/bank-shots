@@ -1,9 +1,9 @@
 import 'package:core_utils/padding/app_padding.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'package:home/home/widgets/goal_grid_view_widget.dart';
 
 import '../widgets/app_bar_widget.dart';
+import '../widgets/goal_grid_view_widget.dart';
 import '../widgets/home_drawer_widget.dart';
 import '../widgets/home_floating_action_button_widget.dart';
 import '../widgets/home_info_naked_card_widget.dart';
@@ -14,36 +14,36 @@ final class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: HomeDrawer(),
+      drawer: const HomeDrawer(),
       body: CustomScrollView(
         slivers: [
           SliverList(
             delegate: SliverChildListDelegate(
               [
-                SafeArea(
+                const SafeArea(
                   child: Column(
                     children: [
                       Gap(10),
                       Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: AppPadding.home),
-                        child: const AppBarWidget(),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: AppPadding.home),
+                        child: AppBarWidget(),
                       ),
                     ],
                   ),
                 ),
-                HomeInfoNakedCardWidget(),
-                Gap(40),
+                const HomeInfoNakedCardWidget(),
+                const Gap(40),
               ],
             ),
           ),
-          SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: AppPadding.home),
+          const SliverPadding(
+            padding: EdgeInsets.symmetric(horizontal: AppPadding.home),
             sliver: GoalGridView(),
           ),
         ],
       ),
-      floatingActionButton: HomeFloatingActionButtonWidget(),
+      floatingActionButton: const HomeFloatingActionButtonWidget(),
     );
   }
 }

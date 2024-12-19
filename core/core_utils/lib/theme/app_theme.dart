@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 
-import '../color/app_color.dart';
+import '../color/core_color.dart';
 import '../radius/app_radius.dart';
 
 abstract final class AppTheme {
   static final ThemeData theme = ThemeData(
-    dividerColor: AppColor.swipeLight,
+    dividerColor: CoreColor.swipeLight,
     dividerTheme: DividerThemeData(
-      color: AppColor.swipeLight,
+      color: CoreColor.swipeLight,
     ),
     listTileTheme: const ListTileThemeData(
-      textColor: AppColor.fontPrimary,
+      textColor: CoreColor.fontPrimary,
     ),
     drawerTheme: const DrawerThemeData(
-      backgroundColor: AppColor.fontOpposite,
+      backgroundColor: CoreColor.fontOpposite,
     ),
-    scaffoldBackgroundColor: AppColor.fontOpposite,
+    scaffoldBackgroundColor: CoreColor.fontOpposite,
     appBarTheme: const AppBarTheme(
-      backgroundColor: AppColor.scaffold,
+      backgroundColor: CoreColor.scaffold,
     ),
     iconTheme: const IconThemeData(
-      color: AppColor.fontPrimary,
+      color: CoreColor.fontPrimary,
     ),
     inputDecorationTheme: const InputDecorationTheme(),
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -41,57 +41,58 @@ abstract final class AppTheme {
       ),
     ),
     scrollbarTheme: const ScrollbarThemeData(
-        thumbColor: WidgetStatePropertyAll(Colors.white),
-        thumbVisibility: WidgetStatePropertyAll(true),
-        trackColor: WidgetStatePropertyAll(Colors.white),
-        trackVisibility: WidgetStatePropertyAll(true),
-        trackBorderColor: WidgetStatePropertyAll(Colors.white)),
+      thumbColor: WidgetStatePropertyAll(Colors.white),
+      thumbVisibility: WidgetStatePropertyAll(true),
+      trackColor: WidgetStatePropertyAll(Colors.white),
+      trackVisibility: WidgetStatePropertyAll(true),
+      trackBorderColor: WidgetStatePropertyAll(Colors.white),
+    ),
     // fontFamily: FontFamily.outfit,
     textTheme: const TextTheme(
       displayLarge: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       displayMedium: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       displaySmall: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       headlineLarge: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       headlineMedium: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       headlineSmall: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       titleLarge: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       titleMedium: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       titleSmall: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       labelLarge: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       labelMedium: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       labelSmall: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       bodyLarge: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       bodyMedium: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
       bodySmall: TextStyle(
-        color: AppColor.fontPrimary,
+        color: CoreColor.fontPrimary,
       ),
     ),
   );

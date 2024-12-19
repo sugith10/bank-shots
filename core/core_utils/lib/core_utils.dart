@@ -1,4 +1,4 @@
-export 'color/app_color.dart';
+export 'color/core_color.dart';
 export 'finacial_qoutes/financial_qoutes.dart';
 export 'formatter/amount_formatter.dart';
 export 'icons/app_icons.dart';

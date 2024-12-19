@@ -5,7 +5,6 @@ bootstrap:
 	@melos bootstrap
 	@echo ""
 	@echo "📦 Generating files..."
-	@melos ga
 	@echo ""
 	@echo "------------------------------"
 	@echo "🚀 Bootstrapping completed! 🚀🚀🚀"

@@ -1,17 +1,7 @@
-import 'package:flutter/foundation.dart';
+part of 'goal_notifier.dart';
 
 @immutable
 final class GoalState {
-  final String icon;
-  final bool validTitle;
-  final bool validGoalAmount;
-  final String goalName;
-  final double? goalAmount;
-  final double currentBalance;
-  final bool error;
-  final bool next;
-  final String message;
-
   const GoalState({
     required this.icon,
     this.validTitle = false,
@@ -23,6 +13,15 @@ final class GoalState {
     this.error = false,
     this.message = '',
   });
+  final String icon;
+  final bool validTitle;
+  final bool validGoalAmount;
+  final String goalName;
+  final double? goalAmount;
+  final double currentBalance;
+  final bool error;
+  final bool next;
+  final String message;
 
   GoalState copyWith({
     String? icon,

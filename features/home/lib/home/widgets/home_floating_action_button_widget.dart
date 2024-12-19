@@ -1,7 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 // final class HomeFloatingActionButton extends StatelessWidget {
 //   const HomeFloatingActionButton({
@@ -21,7 +21,7 @@ import 'package:gap/gap.dart';
 //         //context.push(SamplePage());
 //         CreateGoalRoute().push(context);
 //       },
-//       backgroundColor: AppColor.secondary,
+//       backgroundColor: CoreColor.secondary,
 //       label: Text(
 //         'Add Shot',
 //         style: context.bodyLarge,
@@ -58,22 +58,30 @@ final class _HomeFloatingActionButtonWidgetState
     _topAlignmentAnimation = TweenSequence<Alignment>([
       TweenSequenceItem<Alignment>(
         tween: Tween<Alignment>(
-            begin: Alignment.centerLeft, end: Alignment.topRight),
+          begin: Alignment.centerLeft,
+          end: Alignment.topRight,
+        ),
         weight: 1,
       ),
       TweenSequenceItem<Alignment>(
         tween: Tween<Alignment>(
-            begin: Alignment.topRight, end: Alignment.bottomLeft),
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+        ),
         weight: 1,
       ),
       TweenSequenceItem<Alignment>(
         tween: Tween<Alignment>(
-            begin: Alignment.bottomRight, end: Alignment.bottomLeft),
+          begin: Alignment.bottomRight,
+          end: Alignment.bottomLeft,
+        ),
         weight: 1,
       ),
       TweenSequenceItem<Alignment>(
         tween: Tween<Alignment>(
-            begin: Alignment.bottomLeft, end: Alignment.centerLeft),
+          begin: Alignment.bottomLeft,
+          end: Alignment.centerLeft,
+        ),
         weight: 1,
       ),
     ]).animate(_controller);
@@ -81,12 +89,16 @@ final class _HomeFloatingActionButtonWidgetState
     _bottomAlignmentAnimation = TweenSequence<Alignment>([
       TweenSequenceItem<Alignment>(
         tween: Tween<Alignment>(
-            begin: Alignment.centerRight, end: Alignment.bottomLeft),
+          begin: Alignment.centerRight,
+          end: Alignment.bottomLeft,
+        ),
         weight: 1,
       ),
       TweenSequenceItem<Alignment>(
         tween: Tween<Alignment>(
-            begin: Alignment.bottomLeft, end: Alignment.topLeft),
+          begin: Alignment.bottomLeft,
+          end: Alignment.topLeft,
+        ),
         weight: 1,
       ),
       TweenSequenceItem<Alignment>(
@@ -96,7 +108,9 @@ final class _HomeFloatingActionButtonWidgetState
       ),
       TweenSequenceItem<Alignment>(
         tween: Tween<Alignment>(
-            begin: Alignment.topRight, end: Alignment.centerRight),
+          begin: Alignment.topRight,
+          end: Alignment.centerRight,
+        ),
         weight: 1,
       ),
     ]).animate(_controller);
@@ -115,51 +129,53 @@ final class _HomeFloatingActionButtonWidgetState
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-        animation: _controller,
-        builder: (context, _) {
-          return Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  AppColor.gradientPrimary,
-                  AppColor.gradientSecondary,
-                ],
-                begin: _topAlignmentAnimation.value,
-                end: _bottomAlignmentAnimation.value,
-              ),
-              borderRadius: BorderRadius.circular(
-                AppRadius.round,
-              ),
-              // boxShadow: [
-              //   BoxShadow(
-              //     color: AppColor.boxShadow,
-              //     spreadRadius: 1,
-              //     blurRadius: 1,
-              //     offset: const Offset(0, 1.5),
-              //   ),
-              // ],
+      animation: _controller,
+      builder: (context, _) {
+        return DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: const [
+                CoreColor.gradientPrimary,
+                CoreColor.gradientSecondary,
+              ],
+              begin: _topAlignmentAnimation.value,
+              end: _bottomAlignmentAnimation.value,
             ),
-            child: FloatingActionButton.extended(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(AppRadius.round)),
-              onPressed: () => null,
-              //CreateGoalRoute().push(context),
-              label: Row(
-                children: [
-                  Icon(
-                    AppIcons.graph,
-                    color: Colors.white,
-                  ),
-                  Gap(10),
-                  Text(
-                    "Create Goal",
-                    style: context.bodyLarge,
-                  ),
-                ],
-              ),
-              backgroundColor: Colors.transparent,
+            borderRadius: BorderRadius.circular(
+              AppRadius.round,
             ),
-          );
-        });
+            // boxShadow: [
+            //   BoxShadow(
+            //     color: CoreColor.boxShadow,
+            //     spreadRadius: 1,
+            //     blurRadius: 1,
+            //     offset: const Offset(0, 1.5),
+            //   ),
+            // ],
+          ),
+          child: FloatingActionButton.extended(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(AppRadius.round),
+            ),
+            onPressed: () {},
+            //CreateGoalRoute().push(context),
+            label: Row(
+              children: [
+                const Icon(
+                  AppIcons.graph,
+                  color: Colors.white,
+                ),
+                const Gap(10),
+                Text(
+                  "Create Goal",
+                  style: context.bodyLarge,
+                ),
+              ],
+            ),
+            backgroundColor: Colors.transparent,
+          ),
+        );
+      },
+    );
   }
 }

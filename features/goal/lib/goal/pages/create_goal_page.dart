@@ -1,20 +1,21 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
-import 'package:core_utils/color/app_color.dart';
+import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';
+import 'package:core_utils/core_utils.dart';
+import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gap/gap.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
-import '../widgets/create_goal_sub_card.dart';
-import '../widgets/create_goal_button.dart';
+import '../goal_provider.dart';
 import '../widgets/create_goal_bg_card.dart';
+import '../widgets/create_goal_button.dart';
 import '../widgets/create_goal_card.dart';
 import '../widgets/create_goal_card_constrained_box.dart';
+import '../widgets/create_goal_sub_card.dart';
 import '../widgets/goal_text_filed.dart';
 
-part '../widgets/swipe_text.dart';
 part '../widgets/set_goal_amount_widget.dart';
+part '../widgets/swipe_text.dart';
 
 final class CreateGoalPage extends ConsumerStatefulWidget {
   const CreateGoalPage({super.key});
@@ -48,13 +49,13 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
     final size = MediaQuery.sizeOf(context);
 
     return Scaffold(
-      backgroundColor: AppColor.scaffold,
+      backgroundColor: CoreColor.scaffold,
       body: SingleChildScrollView(
         child: Stack(
           children: [
             CreateGoalBackGroundCard(
               height: size.height,
-              color: AppColor.secondary,
+              color: CoreColor.secondary,
               delay: 1500,
               child: const Column(
                 children: [
@@ -73,10 +74,10 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
               height: size.height * 0.85,
               child: LiquidSwipe.builder(
                 disableUserGesture: false,
-                itemCount: AppColor.colorList.length,
+                itemCount: CoreColor.colorList.length,
                 itemBuilder: (context, index) {
                   return CreateGoalCard(
-                    color: AppColor.colorList[index],
+                    color: CoreColor.colorList[index],
                     child: Column(
                       children: [
                         const Spacer(flex: 2),
@@ -85,11 +86,11 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
                           goalAmountController: _goalAmountController,
                           goalBalanceController: _goalBalanceController,
                           height: size.height * 0.65,
-                          bgColor: AppColor.colorList[index],
+                          bgColor: CoreColor.colorList[index],
                         ),
                         const Spacer(),
                         // _SwipeText(
-                        //   color: AppColor.colorList[index],
+                        //   color: CoreColor.colorList[index],
                         // )
                       ],
                     ),
