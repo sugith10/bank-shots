@@ -14,7 +14,7 @@ class $AssetsPngGen {
 
   /// File path: assets/png/beautiful-indian-girl-white-sweater_146105-52107.avif
   String get beautifulIndianGirlWhiteSweater14610552107 =>
-      'assets/png/beautiful-indian-girl-white-sweater_146105-52107.avif';
+      'packages/core_assets/assets/png/beautiful-indian-girl-white-sweater_146105-52107.avif';
 
   /// List of all assets
   List<String> get values => [beautifulIndianGirlWhiteSweater14610552107];
@@ -24,85 +24,87 @@ class $AssetsSvgGen {
   const $AssetsSvgGen();
 
   /// File path: assets/svg/aircraft.svg
-  String get aircraft => 'assets/svg/aircraft.svg';
+  String get aircraft => 'packages/core_assets/assets/svg/aircraft.svg';
 
   /// File path: assets/svg/apple.svg
-  String get apple => 'assets/svg/apple.svg';
+  String get apple => 'packages/core_assets/assets/svg/apple.svg';
 
   /// File path: assets/svg/bag.svg
-  String get bag => 'assets/svg/bag.svg';
+  String get bag => 'packages/core_assets/assets/svg/bag.svg';
 
   /// File path: assets/svg/beach.svg
-  String get beach => 'assets/svg/beach.svg';
+  String get beach => 'packages/core_assets/assets/svg/beach.svg';
 
   /// File path: assets/svg/binocular.svg
-  String get binocular => 'assets/svg/binocular.svg';
+  String get binocular => 'packages/core_assets/assets/svg/binocular.svg';
 
   /// File path: assets/svg/campfire.svg
-  String get campfire => 'assets/svg/campfire.svg';
+  String get campfire => 'packages/core_assets/assets/svg/campfire.svg';
 
   /// File path: assets/svg/clock.svg
-  String get clock => 'assets/svg/clock.svg';
+  String get clock => 'packages/core_assets/assets/svg/clock.svg';
 
   /// File path: assets/svg/comapss.svg
-  String get comapss => 'assets/svg/comapss.svg';
+  String get comapss => 'packages/core_assets/assets/svg/comapss.svg';
 
   /// File path: assets/svg/face_savoring_food.svg
-  String get faceSavoringFood => 'assets/svg/face_savoring_food.svg';
+  String get faceSavoringFood =>
+      'packages/core_assets/assets/svg/face_savoring_food.svg';
 
   /// File path: assets/svg/family.svg
-  String get family => 'assets/svg/family.svg';
+  String get family => 'packages/core_assets/assets/svg/family.svg';
 
   /// File path: assets/svg/fuji.svg
-  String get fuji => 'assets/svg/fuji.svg';
+  String get fuji => 'packages/core_assets/assets/svg/fuji.svg';
 
   /// File path: assets/svg/girl.svg
-  String get girl => 'assets/svg/girl.svg';
+  String get girl => 'packages/core_assets/assets/svg/girl.svg';
 
   /// File path: assets/svg/hot_money.svg
-  String get hotMoney => 'assets/svg/hot_money.svg';
+  String get hotMoney => 'packages/core_assets/assets/svg/hot_money.svg';
 
   /// File path: assets/svg/lighthouse.svg
-  String get lighthouse => 'assets/svg/lighthouse.svg';
+  String get lighthouse => 'packages/core_assets/assets/svg/lighthouse.svg';
 
   /// File path: assets/svg/love_face.svg
-  String get loveFace => 'assets/svg/love_face.svg';
+  String get loveFace => 'packages/core_assets/assets/svg/love_face.svg';
 
   /// File path: assets/svg/money_mouth.svg
-  String get moneyMouth => 'assets/svg/money_mouth.svg';
+  String get moneyMouth => 'packages/core_assets/assets/svg/money_mouth.svg';
 
   /// File path: assets/svg/phone.svg
-  String get phone => 'assets/svg/phone.svg';
+  String get phone => 'packages/core_assets/assets/svg/phone.svg';
 
   /// File path: assets/svg/piggy_bank.svg
-  String get piggyBank => 'assets/svg/piggy_bank.svg';
+  String get piggyBank => 'packages/core_assets/assets/svg/piggy_bank.svg';
 
   /// File path: assets/svg/pyramid.svg
-  String get pyramid => 'assets/svg/pyramid.svg';
+  String get pyramid => 'packages/core_assets/assets/svg/pyramid.svg';
 
   /// File path: assets/svg/shoe.svg
-  String get shoe => 'assets/svg/shoe.svg';
+  String get shoe => 'packages/core_assets/assets/svg/shoe.svg';
 
   /// File path: assets/svg/sneezing.svg
-  String get sneezing => 'assets/svg/sneezing.svg';
+  String get sneezing => 'packages/core_assets/assets/svg/sneezing.svg';
 
   /// File path: assets/svg/sunglass.svg
-  String get sunglass => 'assets/svg/sunglass.svg';
+  String get sunglass => 'packages/core_assets/assets/svg/sunglass.svg';
 
   /// File path: assets/svg/tower_of_pissa.svg
-  String get towerOfPissa => 'assets/svg/tower_of_pissa.svg';
+  String get towerOfPissa =>
+      'packages/core_assets/assets/svg/tower_of_pissa.svg';
 
   /// File path: assets/svg/tree.svg
-  String get tree => 'assets/svg/tree.svg';
+  String get tree => 'packages/core_assets/assets/svg/tree.svg';
 
   /// File path: assets/svg/trunks.svg
-  String get trunks => 'assets/svg/trunks.svg';
+  String get trunks => 'packages/core_assets/assets/svg/trunks.svg';
 
   /// File path: assets/svg/watch.svg
-  String get watch => 'assets/svg/watch.svg';
+  String get watch => 'packages/core_assets/assets/svg/watch.svg';
 
   /// File path: assets/svg/yatch.svg
-  String get yatch => 'assets/svg/yatch.svg';
+  String get yatch => 'packages/core_assets/assets/svg/yatch.svg';
 
   /// List of all assets
   List<String> get values => [
@@ -154,6 +156,8 @@ class $AssetsWebpGen {
 class Assets {
   Assets._();
 
+  static const String package = 'core_assets';
+
   static const $AssetsPngGen png = $AssetsPngGen();
   static const $AssetsSvgGen svg = $AssetsSvgGen();
   static const $AssetsWebpGen webp = $AssetsWebpGen();
@@ -167,6 +171,8 @@ class AssetGenImage {
   });
 
   final String _assetName;
+
+  static const String package = 'core_assets';
 
   final Size? size;
   final Set<String> flavors;
@@ -191,7 +197,8 @@ class AssetGenImage {
     bool matchTextDirection = false,
     bool gaplessPlayback = true,
     bool isAntiAlias = false,
-    String? package,
+    @Deprecated('Do not specify package for a generated library asset')
+    String? package = package,
     FilterQuality filterQuality = FilterQuality.low,
     int? cacheWidth,
     int? cacheHeight,
@@ -226,7 +233,8 @@ class AssetGenImage {
 
   ImageProvider provider({
     AssetBundle? bundle,
-    String? package,
+    @Deprecated('Do not specify package for a generated library asset')
+    String? package = package,
   }) {
     return AssetImage(
       _assetName,
@@ -237,5 +245,5 @@ class AssetGenImage {
 
   String get path => _assetName;
 
-  String get keyName => _assetName;
+  String get keyName => 'packages/core_assets/$_assetName';
 }

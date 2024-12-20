@@ -11,15 +11,19 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
+  build_runner: ^2.4.12
+  flutter_gen_runner: ^5.6.0
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
-  # For information on the generic Dart part of this file, see the
-  # following page: https://dart.dev/tools/pub/pubspec
-
   # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/png/
+    - assets/svg/
+    - assets/webp/
+
   fonts:
     - family: outfit
       fonts:
@@ -45,7 +49,7 @@ flutter:
 
 flutter_gen:
   integrations:
-  output: gen/
+  output: lib/gen/
 
   assets:
     outputs:
