@@ -1,4 +1,3 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';
 import 'package:core_utils/core_utils.dart';
@@ -25,16 +24,19 @@ class SetGoalTitleWidget extends ConsumerWidget {
       children: [
         const Spacer(),
         const _GoalIcon(),
-        Text(
-          'Set your goal icon',
-          style: context.bodyMedium?.copyWith(
-            color: ColorUtil.get(
-              backgroundColor: bgColor,
-              dark: CoreColor.shadowFontDark,
-              light: CoreColor.shadowFont,
+        Padding(
+          padding: const EdgeInsets.only(top: AppPadding.x12),
+          child: Text(
+            'Set your goal icon',
+            style: context.bodyMedium?.copyWith(
+              color: ColorUtil.get(
+                backgroundColor: bgColor,
+                dark: CoreColor.shadowFontDark,
+                light: CoreColor.shadowFont,
+              ),
             ),
           ),
-        ).paddingOnly(top: AppPadding.x12),
+        ),
         const Spacer(),
         Text(
           'Name your goal',
@@ -51,9 +53,8 @@ class SetGoalTitleWidget extends ConsumerWidget {
           child: GoalTextField(
             controller: controller,
             minWidth: 200,
-            onChanged: (value) => ref
-                .read(CoreProvider.goalProvider.notifier)
-                .onValidTitle(title: value),
+            onChanged: (value) =>
+                ref.read(GoalProvider.goal.notifier).onValidTitle(title: value),
           ),
         ),
       ],
@@ -66,7 +67,7 @@ final class _GoalIcon extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final goal = ref.watch(CoreProvider.goalProvider);
+    final goal = ref.watch(GoalProvider.goal);
     return GestureDetector(
       onTap: () {
         GoalIconPickerBottomSheet().getIconSheet(context, ref);

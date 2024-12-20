@@ -1,7 +1,9 @@
-# melos_managed_dependency_overrides: core_utils,core_widgets,core_assets,core_provider
+# melos_managed_dependency_overrides: core_utils,core_widgets,core_assets,core_provider,core_navigation
 dependency_overrides:
   core_assets:
     path: ../../core/core_assets
+  core_navigation:
+    path: ../../core/navigation
   core_provider:
     path: ../../core/core_provider
   core_utils:

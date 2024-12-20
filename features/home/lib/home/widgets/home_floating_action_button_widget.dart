@@ -1,4 +1,4 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:core_navigation/navigation.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
@@ -157,8 +157,7 @@ final class _HomeFloatingActionButtonWidgetState
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(AppRadius.round),
             ),
-            onPressed: () {},
-            //CreateGoalRoute().push(context),
+            onPressed: () => GoRouterHelper(context).push(CoreRoutes.goal),
             label: Row(
               children: [
                 const Icon(

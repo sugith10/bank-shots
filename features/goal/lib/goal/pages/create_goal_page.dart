@@ -1,4 +1,3 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';
 import 'package:core_utils/core_utils.dart';
@@ -6,15 +5,12 @@ import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
-import '../goal_provider.dart';
 import '../widgets/create_goal_bg_card.dart';
 import '../widgets/create_goal_button.dart';
 import '../widgets/create_goal_card.dart';
 import '../widgets/create_goal_card_constrained_box.dart';
 import '../widgets/create_goal_sub_card.dart';
-import '../widgets/goal_text_filed.dart';
 
-part '../widgets/set_goal_amount_widget.dart';
 part '../widgets/swipe_text.dart';
 
 final class CreateGoalPage extends ConsumerStatefulWidget {

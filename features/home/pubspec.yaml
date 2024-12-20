@@ -7,13 +7,12 @@ environment:
   sdk: 3.5.0
 
 dependencies:
-  awesome_extensions: ^2.0.19
   core_assets: ^0.0.1
+  core_navigation: ^0.0.1
   core_utils: ^0.0.1
   core_widgets: ^0.0.1
   flutter:
     sdk: flutter
-  go_router: ^14.2.3
   google_fonts: ^6.2.1
 
 dev_dependencies:

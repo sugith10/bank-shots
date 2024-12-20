@@ -1,6 +1,4 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
-import 'package:core_utils/formatter/amount_formatter.dart';
-import 'package:core_utils/padding/app_padding.dart';
+import 'package:core_utils/core_utils.dart';
 import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 

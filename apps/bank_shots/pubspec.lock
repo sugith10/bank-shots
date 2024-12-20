@@ -22,6 +22,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.7.0"
+  animate_do:
+    dependency: transitive
+    description:
+      name: animate_do
+      sha256: "7a3162729f0ea042f9dd84da217c5bde5472ad9cef644079929d4304a5dc4ca0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.3.4"
   args:
     dependency: transitive
     description:
@@ -38,14 +46,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
-  awesome_extensions:
-    dependency: transitive
-    description:
-      name: awesome_extensions
-      sha256: a6ef1604c2b648c226d2a826f6b591cd9bc1c832e94b2caa4a67fc14094b77db
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.19"
   boolean_selector:
     dependency: transitive
     description:
@@ -181,6 +181,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  core_navigation:
+    dependency: "direct main"
+    description:
+      path: "../../core/navigation"
+      relative: true
+    source: path
+    version: "0.0.1"
   core_provider:
     dependency: "direct main"
     description:
@@ -299,10 +306,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_svg
-      sha256: "578bd8c508144fdaffd4f77b8ef2d8c523602275cd697cc3db284dbd762ef4ce"
+      sha256: "54900a1a1243f3c4a5506d853a2b5c2dbc38d5f27e52a52618a8054401431123"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.14"
+    version: "2.0.16"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -338,7 +345,7 @@ packages:
     source: hosted
     version: "2.1.2"
   go_router:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: go_router
       sha256: ce89c5a993ca5eea74535f798478502c30a625ecb10a1de4d7fef5cd1bcac2a4
@@ -353,6 +360,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.7.1"
+  goal:
+    dependency: "direct main"
+    description:
+      path: "../../features/goal"
+      relative: true
+    source: path
+    version: "0.0.1"
   google_fonts:
     dependency: transitive
     description:
@@ -496,6 +510,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
+  liquid_swipe:
+    dependency: transitive
+    description:
+      name: liquid_swipe
+      sha256: "04277568a4a5a5e8e1dfa8b222b4e497e294cf64e72113d936fcc54ef0e29149"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.0"
   logging:
     dependency: transitive
     description:
@@ -544,6 +566,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+  nested:
+    dependency: transitive
+    description:
+      name: nested
+      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   package_config:
     dependency: transitive
     description:
@@ -648,6 +678,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.5.1"
+  provider:
+    dependency: transitive
+    description:
+      name: provider
+      sha256: c8a055ee5ce3fd98d6fc872478b03823ffdb448699c6ebdbbc71d59b596fd48c
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.2"
   pub_semver:
     dependency: transitive
     description:

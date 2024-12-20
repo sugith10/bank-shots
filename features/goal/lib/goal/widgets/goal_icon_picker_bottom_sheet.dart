@@ -1,5 +1,5 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_assets/gen/assets.gen.dart';
+import 'package:core_navigation/navigation.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:core_widgets/core_widgets.dart';
@@ -69,9 +69,9 @@ final class GoalIconPickerBottomSheet {
                           child: IconButton(
                             onPressed: () {
                               ref
-                                  .read(CoreProvider.goalProvider.notifier)
+                                  .read(GoalProvider.goal.notifier)
                                   .onUpdateGoalIcon(icon: _goalIcons[index]);
-                              context.pop();
+                              GoRouterHelper(context).pop();
                             },
                             icon: SvgPicture.asset(
                               height: 50,

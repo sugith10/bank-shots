@@ -1,4 +1,3 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';
 import 'package:core_utils/core_utils.dart';
@@ -36,7 +35,7 @@ final class SetCurrentBalanceWidget extends StatelessWidget {
         FittedBox(
           child: Consumer(
             builder: (_, WidgetRef ref, __) {
-              final goal = ref.watch(CoreProvider.goalProvider);
+              final goal = ref.watch(GoalProvider.goal);
               return Text(
                 '\$ ${goal.goalAmount}',
                 style: context.displayLarge?.copyWith(
@@ -65,12 +64,12 @@ final class SetCurrentBalanceWidget extends StatelessWidget {
         const Gap(20),
         Consumer(
           builder: (_, WidgetRef ref, __) {
-            final goal = ref.watch(CoreProvider.goalProvider);
+            final goal = ref.watch(GoalProvider.goal);
             return GoalTextField(
               controller: goalBalanceController,
               borderColor: goal.error ? CoreColor.error : null,
               onChanged: (amount) => ref
-                  .read(CoreProvider.goalProvider.notifier)
+                  .read(GoalProvider.goal.notifier)
                   .onValidCurrentBalanceAmount(amount: amount),
             );
           },
@@ -80,7 +79,7 @@ final class SetCurrentBalanceWidget extends StatelessWidget {
           alignment: FractionalOffset.bottomLeft,
           child: Consumer(
             builder: (_, WidgetRef ref, __) {
-              final goal = ref.watch(CoreProvider.goalProvider);
+              final goal = ref.watch(GoalProvider.goal);
               return Text(
                 goal.message,
                 style: context.titleMedium?.copyWith(

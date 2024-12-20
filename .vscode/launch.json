@@ -14,7 +14,7 @@
             "name": "bank_shot (iPhone)",
             "request": "launch",
             "type": "dart",
-            "deviceId": "BFF684AC-8257-4258-BDDA-B183ED38CA64" // iPhone 15 Pro Max simulator
+            // "deviceId": "BFF684AC-8257-4258-BDDA-B183ED38CA64" // iPhone 15 Pro Max simulator
         },
         {
             "name": "bank_shot (profile mode, iPhone)",

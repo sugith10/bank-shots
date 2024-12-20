@@ -1,4 +1,3 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_assets/gen/assets.gen.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:core_widgets/core_widgets.dart';

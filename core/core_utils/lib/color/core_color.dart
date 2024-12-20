@@ -54,6 +54,6 @@ abstract final class CoreColor {
     card11,
     card12,
     card13,
-    card14
+    card14,
   ];
 }

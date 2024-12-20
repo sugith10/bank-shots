@@ -1,4 +1,3 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_assets/gen/assets.gen.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';

@@ -4,13 +4,13 @@ import 'package:core_utils/radius/app_radius.dart';
 import 'package:flutter/material.dart';
 
 final class GlassCardWidget extends StatelessWidget {
-  final Widget child;
-  final Color color;
   const GlassCardWidget({
     required this.child,
     this.color = Colors.black,
     super.key,
   });
+  final Widget child;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {

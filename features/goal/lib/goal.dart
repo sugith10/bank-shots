@@ -1,1 +1,1 @@
-export 'goal/providers/goal_provider/goal_notifier.dart';
+export 'goal_route.dart';

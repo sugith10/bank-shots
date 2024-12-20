@@ -1,4 +1,3 @@
-import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +13,7 @@ final class CreateGoalButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final goal = ref.watch(CoreProvider.goalProvider);
+    final goal = ref.watch(GoalProvider.goal);
     return TextButton(
       style: TextButton.styleFrom(
         overlayColor: goal.next ? null : Colors.transparent,
@@ -27,9 +26,9 @@ final class CreateGoalButton extends ConsumerWidget {
       ),
       onPressed: () {
         if (!goal.validTitle && goal.next) {
-          ref.read(CoreProvider.goalProvider.notifier).onSetGoalName();
+          ref.read(GoalProvider.goal.notifier).onSetGoalName();
         } else if (!goal.validGoalAmount && goal.next) {
-          ref.read(CoreProvider.goalProvider.notifier).onSetGoalAmout();
+          ref.read(GoalProvider.goal.notifier).onSetGoalAmout();
         }
       },
       child: Padding(
