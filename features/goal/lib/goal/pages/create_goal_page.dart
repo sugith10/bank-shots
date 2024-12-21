@@ -1,7 +1,6 @@
+import 'package:core_design/core_design.dart';
 import 'package:core_provider/core_provider.dart';
-import 'package:core_utils/color/color_util.dart';
 import 'package:core_utils/core_utils.dart';
-import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
@@ -10,8 +9,6 @@ import '../widgets/create_goal_button.dart';
 import '../widgets/create_goal_card.dart';
 import '../widgets/create_goal_card_constrained_box.dart';
 import '../widgets/create_goal_sub_card.dart';
-
-part '../widgets/swipe_text.dart';
 
 final class CreateGoalPage extends ConsumerStatefulWidget {
   const CreateGoalPage({super.key});
@@ -69,7 +66,6 @@ final class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
               // height: size.height * 0.55,
               height: size.height * 0.85,
               child: LiquidSwipe.builder(
-                disableUserGesture: false,
                 itemCount: CoreColor.colorList.length,
                 itemBuilder: (context, index) {
                   return CreateGoalCard(

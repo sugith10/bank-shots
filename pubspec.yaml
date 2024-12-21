@@ -2,11 +2,11 @@ name: bank_shots_workspace
 description: Bank Shots workspace
 
 environment:
-  sdk: ">=3.0.1 <4.0.0"
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  melos: ^6.1.0
+  melos: ^6.2.0

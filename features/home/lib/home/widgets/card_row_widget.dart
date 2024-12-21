@@ -1,5 +1,5 @@
+import 'package:core_design/core_design.dart';
 import 'package:core_utils/core_utils.dart';
-import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 
 final class CardRow extends StatelessWidget {

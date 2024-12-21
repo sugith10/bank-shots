@@ -1,4 +1,4 @@
-import 'package:core_navigation/navigation.dart';
+import 'package:core_navigation/core_navigation.dart';
 import 'package:flutter/material.dart';
 
 import 'goal/pages/create_goal_page.dart';

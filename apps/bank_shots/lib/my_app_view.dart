@@ -1,4 +1,4 @@
-import 'package:core_utils/theme/app_theme.dart';
+import 'package:core_design/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 import 'route/app_route.dart';

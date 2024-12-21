@@ -1,6 +1,5 @@
-import 'package:core_navigation/navigation.dart';
-import 'package:core_utils/core_utils.dart';
-import 'package:core_widgets/core_widgets.dart';
+import 'package:core_design/core_design.dart';
+import 'package:core_navigation/core_navigation.dart';
 import 'package:flutter/material.dart';
 
 final class HomeDrawer extends StatelessWidget {
@@ -19,10 +18,7 @@ final class HomeDrawer extends StatelessWidget {
           Material(
             color: Colors.transparent,
             child: ListTile(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(AppRadius.x10),
-              ),
-              splashColor: Colors.white.withOpacity(0.1),
+              splashColor: Colors.white.withValues(alpha: .1),
               title: const Text('Item 1'),
               onTap: () => GoRouterHelper(context).pop(),
             ),

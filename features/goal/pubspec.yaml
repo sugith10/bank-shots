@@ -4,15 +4,15 @@ version: 0.0.1
 publish_to: none
 
 environment:
-  sdk: 3.5.0
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
   animate_do: ^3.3.4
   core_assets: ^0.0.1
+  core_design: ^0.0.1
   core_navigation: ^0.0.1
   core_provider: ^0.0.1
   core_utils: ^0.0.1
-  core_widgets: ^0.0.1
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.16

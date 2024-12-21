@@ -4,12 +4,12 @@ version: 0.0.1
 publish_to: none
 
 environment:
-  sdk: 3.5.0
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
+  core_assets: ^0.0.1
   flutter:
     sdk: flutter
-  iconly: ^1.0.1
 
 dev_dependencies:
   flutter_lints: ^4.0.0

@@ -1,7 +1,8 @@
 import 'dart:ui';
 
-import 'package:core_utils/radius/app_radius.dart';
 import 'package:flutter/material.dart';
+
+import '../../radius/app_radius.dart';
 
 final class GlassCardWidget extends StatelessWidget {
   const GlassCardWidget({
@@ -15,22 +16,22 @@ final class GlassCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(AppRadius.x20),
+      borderRadius: BorderRadius.circular(AppRadius.x10),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
         child: DecoratedBox(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadius.x20),
-            color: color.withOpacity(0.3),
+            borderRadius: BorderRadius.circular(AppRadius.x12),
+            color: color.withValues(alpha: .3),
             boxShadow: [
               BoxShadow(
-                color: color.withOpacity(0.1),
+                color: color.withValues(alpha: .1),
                 blurRadius: 10,
                 spreadRadius: 5,
               ),
             ],
             border: Border.all(
-              color: color.withOpacity(0.1),
+              color: color.withValues(alpha: .1),
             ),
           ),
           child: child,

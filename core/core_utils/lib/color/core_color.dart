@@ -12,16 +12,16 @@ abstract final class CoreColor {
   static const card = Color.fromARGB(255, 27, 27, 27);
   static const fab = Color.fromARGB(255, 40, 40, 40);
   static const secondary = Color(0xFF6050CF);
-  static final shadowFont = Colors.white.withOpacity(0.6);
-  static final shadowFontDark = Colors.black.withOpacity(0.6);
+  static final shadowFont = Colors.white.withValues(alpha: .6);
+  static final shadowFontDark = Colors.black.withValues(alpha: .6);
   static const error = Colors.redAccent;
 
   static const gradientPrimary = Color.fromRGBO(78, 78, 78, 1);
   static const gradientSecondary = Color.fromRGBO(0, 0, 0, 1);
   static const boxShadow = Color.fromARGB(66, 255, 255, 255);
 
-  static final swipeDark = Colors.black.withOpacity(0.7);
-  static final swipeLight = Colors.white.withOpacity(0.7);
+  static final swipeDark = Colors.black.withValues(alpha: .7);
+  static final swipeLight = Colors.white.withValues(alpha: .7);
 
   // Card colors
   static const card1 = Color(0xFFD1FD08);

@@ -1,3 +1,4 @@
+import 'package:core_design/core_design.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ final class CreateGoalButton extends ConsumerWidget {
         overlayColor: goal.next ? null : Colors.transparent,
         backgroundColor: goal.next
             ? const Color.fromARGB(255, 116, 95, 253)
-            : Colors.white.withOpacity(0.1),
+            : Colors.white.withValues(alpha: .1),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadius.round),
         ),

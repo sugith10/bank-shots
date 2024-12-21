@@ -1,8 +1,8 @@
 import 'package:core_assets/gen/assets.gen.dart';
+import 'package:core_design/core_design.dart';
 import 'package:core_provider/core_provider.dart';
 import 'package:core_utils/color/color_util.dart';
 import 'package:core_utils/core_utils.dart';
-import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'goal_icon.dart';

@@ -1,5 +1,5 @@
+import 'package:core_design/core_design.dart';
 import 'package:core_utils/core_utils.dart';
-import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'card_row_widget.dart';
@@ -17,7 +17,7 @@ final class HomeInfoCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadius.x20),
         boxShadow: [
           BoxShadow(
-            color: Colors.white.withOpacity(0.1),
+            color: Colors.white.withValues(alpha: 0.1),
             blurRadius: 10,
             offset: const Offset(1, 5),
           ),
@@ -54,7 +54,7 @@ final class HomeInfoCard extends StatelessWidget {
                 vertical: AppPadding.x16,
               ),
               child: Divider(
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withValues(alpha: 0.2),
                 thickness: 1.5,
                 indent: 40,
                 endIndent: 40,

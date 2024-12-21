@@ -1,4 +1,4 @@
-import 'package:core_utils/core_utils.dart';
+import 'package:core_design/core_design.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -20,7 +20,7 @@ final class GoalIcon extends StatelessWidget {
       decoration: showDecoration
           ? BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadius.x75),
-              color: Colors.black.withOpacity(0.3),
+              color: Colors.black.withValues(alpha: .3),
             )
           : null,
       padding: const EdgeInsets.all(AppPadding.x16),

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#D4684C</color>
+    <color name="primary">#131316</color>
+    <color name="secondary">#1A1A1D</color>
+    <color name="darkGrey1">#303030</color>
+    <color name="darkGrey2">#262626</color>
+    <color name="darkGrey3">#1A1A1A</color>
+    <color name="darkCharcoal">#1B1B1B</color>
+    <color name="peachOrange">#FE9C67</color>
+    <color name="coralOrange">#FF7955</color>
+    <color name="softOrange">#FCBA97</color>
+    <color name="white70">#B2FFFFFF</color>
 </resources>

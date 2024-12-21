@@ -1,3 +1,4 @@
+import 'package:core_design/core_design.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +34,7 @@ final class GoalTextField extends StatelessWidget {
           decoration: InputDecoration(
             focusedBorder: inputBorder,
             enabledBorder: inputBorder,
-            fillColor: Colors.white.withOpacity(0.6),
+            fillColor: Colors.white.withValues(alpha: .6),
             filled: true,
           ),
           style: const TextStyle(

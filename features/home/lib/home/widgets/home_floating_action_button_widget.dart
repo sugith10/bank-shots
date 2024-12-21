@@ -1,6 +1,6 @@
-import 'package:core_navigation/navigation.dart';
+import 'package:core_design/core_design.dart';
+import 'package:core_navigation/core_navigation.dart';
 import 'package:core_utils/core_utils.dart';
-import 'package:core_widgets/core_widgets.dart';
 import 'package:flutter/material.dart';
 
 // final class HomeFloatingActionButton extends StatelessWidget {
@@ -102,8 +102,10 @@ final class _HomeFloatingActionButtonWidgetState
         weight: 1,
       ),
       TweenSequenceItem<Alignment>(
-        tween:
-            Tween<Alignment>(begin: Alignment.topLeft, end: Alignment.topRight),
+        tween: Tween<Alignment>(
+          begin: Alignment.topLeft,
+          end: Alignment.topRight,
+        ),
         weight: 1,
       ),
       TweenSequenceItem<Alignment>(
@@ -121,8 +123,6 @@ final class _HomeFloatingActionButtonWidgetState
   @override
   void dispose() {
     _controller.dispose();
-    _topAlignmentAnimation;
-    _bottomAlignmentAnimation;
     super.dispose();
   }
 
@@ -142,7 +142,7 @@ final class _HomeFloatingActionButtonWidgetState
               end: _bottomAlignmentAnimation.value,
             ),
             borderRadius: BorderRadius.circular(
-              AppRadius.round,
+              AppRadius.x12,
             ),
             // boxShadow: [
             //   BoxShadow(

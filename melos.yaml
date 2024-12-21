@@ -10,12 +10,12 @@ packages:
 command:
   bootstrap:
     environment:
-      sdk: 3.5.0
-      flutter: 3.24.0
+      sdk: ">=3.5.0 <4.0.0"
+    flutter: "3.27.1"
 
     dependencies:
       core_utils: ^0.0.1
-      core_widgets: ^0.0.1
+      core_design: ^0.0.1
       core_assets: ^0.0.1
       core_provider: ^0.0.1
       core_navigation: ^0.0.1

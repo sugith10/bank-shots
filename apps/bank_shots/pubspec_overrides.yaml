@@ -1,15 +1,15 @@
-# melos_managed_dependency_overrides: core_provider,core_assets,core_utils,core_widgets,home,core_navigation,goal
+# melos_managed_dependency_overrides: core_assets,core_navigation,core_provider,core_utils,core_design,goal,home
 dependency_overrides:
   core_assets:
     path: ../../core/core_assets
   core_navigation:
-    path: ../../core/navigation
+    path: ../../core/core_navigation
   core_provider:
     path: ../../core/core_provider
   core_utils:
     path: ../../core/core_utils
-  core_widgets:
-    path: ../../core/core_widgets
+  core_design:
+    path: ../../core/core_design
   goal:
     path: ../../features/goal
   home:

@@ -10,6 +10,9 @@
 class FontFamily {
   FontFamily._();
 
+  /// Font family: be_vietnam_pro
+  static const String beVietnamPro = 'be_vietnam_pro';
+
   /// Font family: outfit
   static const String outfit = 'outfit';
 }
