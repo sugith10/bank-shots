@@ -8,8 +8,8 @@ import '../widgets/home_floating_action_button_widget.dart';
 import '../widgets/home_info_naked_card_widget.dart';
 import '../widgets/view_customize_button.dart';
 
-final class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+final class GoalHomePage extends StatelessWidget {
+  const GoalHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

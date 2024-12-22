@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-
-@immutable
-final class AppPadding {
-  const AppPadding._();
+abstract final class AppPadding {
   // Numbers
   static const x40 = 40.0;
   static const x20 = 20.0;

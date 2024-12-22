@@ -1,34 +1,8 @@
 import 'package:core_design/core_design.dart';
-import 'package:core_navigation/core_navigation.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
 
-// final class HomeFloatingActionButton extends StatelessWidget {
-//   const HomeFloatingActionButton({
-//     super.key,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return FloatingActionButton.extended(
-//       shape: RoundedRectangleBorder(
-//           borderRadius: BorderRadius.circular(AppRadius.round)),
-//       icon: Icon(
-//         IconlyBroken.graph,
-//         color: Colors.white,
-//       ),
-//       onPressed: () {
-//         //context.push(SamplePage());
-//         CreateGoalRoute().push(context);
-//       },
-//       backgroundColor: CoreColor.secondary,
-//       label: Text(
-//         'Add Shot',
-//         style: context.bodyLarge,
-//       ),
-//     );
-//   }
-// }
+import '../../../goal_route.dart';
 
 final class HomeFloatingActionButtonWidget extends StatefulWidget {
   const HomeFloatingActionButtonWidget({
@@ -157,7 +131,7 @@ final class _HomeFloatingActionButtonWidgetState
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(AppRadius.round),
             ),
-            onPressed: () => GoRouterHelper(context).push(CoreRoutes.goal),
+            onPressed: () => GoalCreateRoute().push(context),
             label: Row(
               children: [
                 const Icon(

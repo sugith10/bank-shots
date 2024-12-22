@@ -1,4 +1,4 @@
-import 'package:core_assets/gen/colors.gen.dart';
+import 'package:core_assets/core_assets.dart.dart';
 import 'package:flutter/material.dart';
 
 import '../radius/app_radius.dart';
@@ -54,7 +54,7 @@ abstract final class AppTheme {
         borderRadius: BorderRadius.circular(AppRadius.x12),
       ),
     ),
-    // fontFamily: FontFamily.outfit,
+    fontFamily: FontFamily.beVietnamPro,
     textTheme: const TextTheme(
       displayLarge: TextStyle(color: Colors.white),
       displayMedium: TextStyle(color: Colors.white),

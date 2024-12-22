@@ -2,7 +2,6 @@ import 'package:core_assets/gen/colors.gen.dart';
 import 'package:core_design/core_design.dart';
 import 'package:core_utils/core_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 final class HomeInfoCardWidget extends StatelessWidget {
   const HomeInfoCardWidget({
@@ -18,35 +17,28 @@ final class HomeInfoCardWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadius.x20),
           color: AssetColors.darkGrey2,
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(AppPadding.x16),
+        child: const Padding(
+          padding: EdgeInsets.all(AppPadding.x16),
           child: Column(
             children: [
-              const Gap(20),
-              const _AmountWidget(
+              Gap(20),
+              _AmountWidget(
                 title: 'Target',
                 amount: '10,000',
               ),
-              const _Divider(),
+              _Divider(),
               FittedBox(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    TweenAnimationBuilder<double>(
-                      tween: Tween(begin: 0, end: 50),
-                      duration: const Duration(milliseconds: 1500),
-                      curve: Curves.easeInOut,
-                      builder: (context, value, _) {
-                        return CircularPercentageIndicator(
-                          size: 96,
-                          percentage: value,
-                          color: AssetColors.peachOrange,
-                          backgroundColor: AssetColors.darkGrey1,
-                        );
-                      },
+                    CircularPercentageIndicator(
+                      size: 96,
+                      percentage: 60,
+                      color: AssetColors.peachOrange,
+                      backgroundColor: AssetColors.darkGrey1,
                     ),
-                    const Gap(20),
-                    const Column(
+                    Gap(20),
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -106,29 +98,25 @@ final class _AmountWidget extends StatelessWidget {
         children: [
           Text(
             '₹$amount',
-            style: GoogleFonts.beVietnamPro(
-              textStyle: smallText
-                  ? context.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    )
-                  : context.displayMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-            ),
+            style: smallText
+                ? context.headlineMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  )
+                : context.displayMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
           ),
           const Gap(10),
           Text(
             title,
-            style: GoogleFonts.beVietnamPro(
-              textStyle: smallText
-                  ? context.titleSmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white.withValues(alpha: 0.98),
-                    )
-                  : context.titleLarge?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-            ),
+            style: smallText
+                ? context.titleSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white.withValues(alpha: 0.98),
+                  )
+                : context.titleLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
           ),
         ],
       ),

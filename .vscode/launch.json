@@ -8,12 +8,16 @@
             "name": "bank_shot (android)",
             "request": "launch",
             "type": "dart",
+            "program": "${workspaceFolder}/apps/bank_shots/lib/main.dart",
+            "cwd": "${workspaceFolder}/apps/bank_shots"
             // "deviceId": "E111BB39-1B55-4F32-8E49-70198198C51A" // iPhone 15 Pro Max simulator
         },
         {
             "name": "bank_shot (iPhone)",
             "request": "launch",
             "type": "dart",
+            "program": "${workspaceFolder}/apps/bank_shots/lib/main.dart",
+            "cwd": "${workspaceFolder}/apps/bank_shots"
             // "deviceId": "BFF684AC-8257-4258-BDDA-B183ED38CA64" // iPhone 15 Pro Max simulator
         },
         {

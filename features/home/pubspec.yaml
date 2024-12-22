@@ -11,9 +11,9 @@ dependencies:
   core_design: ^0.0.1
   core_navigation: ^0.0.1
   core_utils: ^0.0.1
+  crystal_navigation_bar: ^1.0.2
   flutter:
     sdk: flutter
-  google_fonts: ^6.2.1
 
 dev_dependencies:
   build_runner: ^2.4.14

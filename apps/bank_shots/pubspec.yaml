@@ -17,6 +17,7 @@ dependencies:
   flutter_svg: ^2.0.10
   goal: ^0.0.1
   home: ^0.0.1
+  onboarding: ^0.0.1
 
 dev_dependencies:
   build_runner: ^2.4.13

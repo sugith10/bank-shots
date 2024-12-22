@@ -8,6 +8,9 @@ abstract final class AppRadius {
   static const x10 = 10.0;
 
   // UI Standards
+  /// x50
   static const round = x50;
+
+  /// x12
   static const button = x12;
 }

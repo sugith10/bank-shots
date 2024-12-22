@@ -6,34 +6,45 @@ final class CircularPercentageIndicator extends StatelessWidget {
     required this.size,
     required this.color,
     required this.backgroundColor,
+    this.strokeWidth = 15,
     super.key,
   });
+
   final double percentage;
   final double size;
   final Color color;
   final Color backgroundColor;
+  final double strokeWidth;
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: size,
-      width: size,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          CustomPaint(
-            size: Size(size, size),
-            painter: _CirclePainter(
-              percentage: percentage,
-              color: color,
-              backgroundColor: backgroundColor,
-            ),
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0, end: percentage),
+      duration: const Duration(milliseconds: 1500),
+      curve: Curves.easeInOut,
+      builder: (context, value, _) {
+        return SizedBox(
+          height: size,
+          width: size,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              CustomPaint(
+                size: Size(size, size),
+                painter: _CirclePainter(
+                  percentage: value,
+                  color: color,
+                  backgroundColor: backgroundColor,
+                  strokeWidth: strokeWidth,
+                ),
+              ),
+              Text(
+                '${value.toStringAsFixed(0)}%',
+              ),
+            ],
           ),
-          Text(
-            '${percentage.toStringAsFixed(0)}%',
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 }
@@ -43,22 +54,24 @@ final class _CirclePainter extends CustomPainter {
     required this.percentage,
     required this.color,
     required this.backgroundColor,
+    required this.strokeWidth,
   });
   final double percentage;
   final Color color;
   final Color backgroundColor;
+  final double strokeWidth;
 
   @override
   void paint(Canvas canvas, Size size) {
     final backgroundPaint = Paint()
       ..color = backgroundColor
-      ..strokeWidth = 10
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
 
     final foregroundPaint = Paint()
       ..color = color
-      ..strokeWidth = 10
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
 
