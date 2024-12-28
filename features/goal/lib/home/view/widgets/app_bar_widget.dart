@@ -14,41 +14,43 @@ final class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Row(
-        children: [
-          GestureDetector(
-            onTap: () {
-              Scaffold.of(context).openDrawer();
-            },
-            child: CircleAvatar(
-              backgroundImage: AssetImage(
-                Assets.png.beautifulIndianGirlWhiteSweater14610552107,
+      bottom: false,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: AppPadding.home),
+        child: Row(
+          children: [
+            GestureDetector(
+              onTap: () => Scaffold.of(context).openDrawer(),
+              child: CircleAvatar(
+                backgroundImage: AssetImage(
+                  Assets.png.beautifulIndianGirlWhiteSweater14610552107,
+                ),
               ),
             ),
-          ),
-          const Spacer(),
-          ElevatedButton(
-            onPressed: () {
-              AppDialog.show(
-                context: context,
-                child: const SelectAccountDailog(),
-              );
-            },
-            child: Center(
-              child: Row(
-                children: [
-                  Text('Account B', style: context.titleMedium),
-                  const Gap(10),
-                  const Icon(
-                    AppIcons.arrowDown,
-                    size: 25,
-                    color: AssetColors.softOrange,
-                  ),
-                ],
+            const Spacer(),
+            ElevatedButton(
+              onPressed: () {
+                AppDialog.show(
+                  context: context,
+                  child: const SelectAccountDailog(),
+                );
+              },
+              child: Center(
+                child: Row(
+                  children: [
+                    Text('Account B', style: context.titleMedium),
+                    const Gap(10),
+                    const Icon(
+                      AppIcons.arrowDown,
+                      size: 25,
+                      color: AssetColors.softOrange,
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

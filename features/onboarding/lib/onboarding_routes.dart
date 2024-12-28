@@ -1,7 +1,7 @@
 import 'package:core_navigation/core_navigation.dart';
 import 'package:flutter/material.dart';
 
-import 'splash/ui/page/splash_page.dart';
+import 'splash/view/page/splash_page.dart';
 
 part 'onboarding_routes.g.dart';
 

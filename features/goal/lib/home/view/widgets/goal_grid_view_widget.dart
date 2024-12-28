@@ -44,6 +44,7 @@ final class _GridBoxWidgetState extends State<_GridBoxWidget>
     return GestureDetector(
       onTap: () => GoalViewRoute().push(context),
       child: GoalCard(
+        padding: const EdgeInsets.all(AppPadding.x8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

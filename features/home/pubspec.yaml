@@ -10,10 +10,12 @@ dependencies:
   core_assets: ^0.0.1
   core_design: ^0.0.1
   core_navigation: ^0.0.1
+  core_provider: ^0.0.1
   core_utils: ^0.0.1
   crystal_navigation_bar: ^1.0.2
   flutter:
     sdk: flutter
+  goal: ^0.0.1
 
 dev_dependencies:
   build_runner: ^2.4.14

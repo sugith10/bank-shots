@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../widgets/app_bar_widget.dart';
 import '../widgets/goal_grid_view_widget.dart';
 import '../widgets/home_drawer_widget.dart';
-import '../widgets/home_floating_action_button_widget.dart';
 import '../widgets/home_info_naked_card_widget.dart';
 import '../widgets/view_customize_button.dart';
 
@@ -14,18 +13,21 @@ final class GoalHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Colors.transparent,
       drawer: HomeDrawer(),
       body: CustomScrollView(
         slivers: [
-          SliverGap(10),
-          SliverPadding(
-            padding: EdgeInsets.symmetric(horizontal: AppPadding.home),
-            sliver: SliverToBoxAdapter(child: AppBarWidget()),
-          ),
-          SliverToBoxAdapter(child: HomeInfoCardWidget()),
-          SliverPadding(
-            padding: EdgeInsets.symmetric(vertical: AppPadding.home),
-            sliver: SliverToBoxAdapter(child: ViewCustomizeButton()),
+          SliverToBoxAdapter(
+            child: HomeBgWidget(
+              child: Column(
+                children: [
+                  AppBarWidget(),
+                  Gap(20),
+                  HomeInfoCardWidget(),
+                  ViewCustomizeButton(),
+                ],
+              ),
+            ),
           ),
           SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: AppPadding.home),
@@ -33,7 +35,6 @@ final class GoalHomePage extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: HomeFloatingActionButtonWidget(),
     );
   }
 }
